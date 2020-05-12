@@ -1,0 +1,145 @@
+@media (max-width: 1000px) {
+  .body-wrapper, #about-wrapper {
+    margin: 0 1rem;
+  }
+  .project-wrapper {
+    margin: 6rem 1rem 6rem 1rem;
+  }
+  footer {
+    margin: 0 1rem 1rem 1rem;
+  }
+
+  nav {
+    padding: 1rem;
+  }
+  .nav-links {
+    margin-right: 2rem;
+  }
+
+  .imgDiv {
+    background-size: calc(calc(100vw / 2) - 1rem);
+    width: calc(100vw - 2rem);
+    /* height: 281px; */
+  }
+  .designImgDiv {
+    height: calc(100vw / 2);
+  }
+  .indexImgDiv {
+    height: calc(100vw / 4);
+    transform: translateY(-20%);
+  }
+  .headingText:hover + .imgDiv::before, .headingText:hover + .imgDiv::after {
+    right: 0;
+  }
+}
+@media (max-width: 800px) {
+  .project-content:nth-child(2) {
+    max-width: 40%;
+  }
+  #favicon {
+    max-width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .project-content:nth-child(2) {
+    max-width: 100%;
+  }
+  .project-content {
+    margin: 1rem 0 0 0;
+  }
+  .project-row {
+    flex-direction: column;
+  }
+  .project-content img, .project-content figure, .project-content .carousel {
+    /* position: unset; */
+    top: unset;
+    transform: translateY(0);
+  }
+  .details {
+    max-height: unset;
+  }
+  .noMargin {
+    margin: 0;
+  }
+  .imgDiv {
+    /* opacity: 0.5; */
+  }
+  .indexImgDiv {
+    transform: translateY(35%);
+  }
+  #imgAbout {
+    position: unset;
+    top: unset;
+    transform: translateY(0);
+    background-size: 100%;
+    opacity: 100;
+    margin-top: 1rem;
+  }
+  #about-wrapper {
+    position: relative;
+    display: block;
+    height: auto;
+  }
+  #pushFooter {
+    height: unset;
+  }
+
+
+  .headingText:hover + .imgDiv::before, .headingText:hover + .imgDiv::after {
+    display: none;
+  }
+  p, .body-content p {
+    max-width: 100%;
+  }
+  h2, h2 a {
+    font-size: 2.5rem;
+  }
+  H4 {
+    font-size: 1.5rem;
+  }
+  hr {
+    margin-top: 1rem;
+  }
+  .rightAlign {
+    text-align: left;
+  }
+}
+
+/* NAV BAR RESIZE TITLE */
+@media (max-width: 450px) {
+  .title span{
+    position: absolute;
+    top:1rem;
+    left:1rem;
+    opacity: 0;
+  }
+  .title:before{
+    content: "MB";   
+  }
+}
+
+/* HEIGHT */
+@media (max-height: 850px) {
+  .body-wrapper, #about-wrapper {
+    position: relative;
+    display: block;
+    height: auto;
+  }
+  #imgAbout {
+    top: 19rem;
+  }
+  footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (max-width: 1000px) {
+    footer {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
