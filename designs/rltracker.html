@@ -57,69 +57,85 @@
     <div class="project-row">
       <div class="project-content">
         <br>
-        <h3 style="color: #FC7C0C;">Summary</h3>
+        <h3 style="color: #0C88FC;">Summary</h3>
         <p>
-          EMUrgency (Extravehicular Mobility Unit routine gone extremely not cool yo) is a space-themed Android game I
-          developed in my spare time over several months starting in late August 2016. I was expanding upon skills
-          developed in IAT courses such as Animated Intro to Programming and Digital Games. I had been slowly developing
-          it and I published <a
-            href="https://play.google.com/store/apps/details?id=processing.test.emurgency&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">v1.0
-            on Google Play</a> on February 2nd, 2017.
-        </p><br><br>
-        <h3 style="color: #FC7C0C;">Development</h3>
-        <p>
-          EMUrgency was created entirely with Processing 3’s Android development mode. When I started the project I
-          already had several courses worth of experience creating various applications
-          <!-- (including the <a href="/pillbox">Pillbox project</a>)  -->
-          and games with Processing and I was interested in applying that
-          knowledge to the mobile platform.
+          <span style="font-weight: bold;">RL Match Tracker provides players with game-to-game data tracking for the
+            competetive multiplayer car-soccer
+            videogame, Rocket League.</span> Data is collected to showcase the players average abilities to highlight
+          where the
+          player can improve. My project partner and I thought that this was an untapped market for data tracking for
+          Rocket League players, because existing popular websites like <a
+            href="https://rocketleague.tracker.network/">Tracker Network</a> only showcase
+          the players lifetime career data, with no way to see specific match data.
         </p><br>
         <p>
-          The UI system I implemented for the EMUrgency's menus uses <a
-            href="http://web.media.mit.edu/~cassiano/projects/cards_ui/index">Cards_UI by Lucas
-            Cassiano from MIT</a>.
+          This project was developed over the course of the Fall 2019 semester for an android app development course. My
+          partner and I both programmed the application using Android Studio, but I moslty focussed on the UX and visual
+          development, while he focussed on the back-end. The goal of the project was to create an Android application
+          that uses an SQL database. I did some additional polishing and published the app to <a
+            href="https://play.google.com/store/apps/details?id=com.rlmatchtracker.interface2">Google Play</a> on May
+          6th, 2020.
+        </p><br>
+      </div>
+      <div class="project-content">
+        <div class="videoWrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/OArml5R_skY" frameborder="0"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-row">
+      <div class="project-content">
+        <h3 style="color: #0C88FC;">Features</h3>
+        <p>
+          The most advanced capability of the app is auto mode, which allows you to put your phone down during
+          gameplay.
+          Then when you pick up your phone (ideally at the end of a amtch), the camera
+          will activate and you can take a picture of the final scoreboard. This scoreboard will be saved for manual
+          input when the user is free to do so. Refrencing from your socreboard pictures, or with manual input, the
+          app
+          will save all inputted Rocket League match data including the gamemode, score, and your personal
+          performance
+          stats for each match. The app will present you with some graphs and data such as your average score for
+          each
+          game.
+        </p><br>
+        <p>
+          The app also has some more fun features such as themes, which can be changed between blue or orange,
+          according
+          to the team colours of Rocket League! There is also the ability to put in your Rocket League account which
+          will let the user easily view their stats on <a href="https://rocketleague.tracker.network/">Tracker
+            Network</a>, for a broader view of their Rocket League career stats.
         </p><br>
       </div>
       <div class="project-content">
         <figure>
-          <img src="../img/emurgency/scan.jpg" alt="Character Sketches">
-          <figcaption>Final sketches of the player</figcaption>
+          <img src="../img/rltracker/auto.jpg" alt="Sprites1">
+          <figcaption>Auto mode screen</figcaption>
         </figure>
+      </div>
+    </div>
+
+    <div class="project-row">
+      <div class="project-content">
+        <h3 style="color: #0C88FC;">Development</h3>
+        <p>
+          null
+        </p><br>
+      </div>
+      <div class="project-content">
       </div>
     </div>
     <div class="project-row">
       <div class="project-content">
-        <h3 style="color: #FC7C0C;">Gameplay</h3>
+        <h3 style="color: #0C88FC;">Challenges</h3>
         <p>
-          The gameplay of EMUrgency most closely resembles endless runner type games in it’s procedural challenge.
-          However, the gameplay was result of my approach to creating a Processing game for Android, from the controls
-          perspective. The most popular mobile games commonly use very minimal input while also giving the player
-          freedom to control the game by touching anywhere on the screen instead of using virtual buttons.
-        </p><br>
-        <p>
-          I took this idea to create a character that moves towards the player touching anywhere on the screen, and I
-          found that removing any properties of constant friction and de-acceleration was similar to a zero-gravity
-          situation. Running with this idea I decided to continue development with the space-theme seen in the published
-          project.
-        </p><br>
-      </div>
-      <div class="project-content">
-        <figure>
-          <img src="../img/emurgency/screens.png" alt="Sprites1">
-          <figcaption>Graphical iterations of EMUrgency</figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="project-row">
-      <div class="project-content">
-        <h3 style="color: #FC7C0C;">Visuals</h3>
-        <p>
-          I decided to use an 8-bit style so I could easily create cohesive visuals across the gameplay and menu
-          systems. I found a great <a id="emuBlue"
-            href="http://opengameart.org/content/scaled-objects-in-solar-system-pixel-art">8-bit earth render by Michael
-            J. Pierce</a> to use in the background, which really livened up the game's background and (lack of)
-          atmosphere. The particle effects and starry background are generated in Processing with code, but the rest of
-          the graphics were made by hand with photoshop.
+          The biggest challenge was finding a way to compress and store an indefinite amount of images in the SQL
+          database alongside all the other match data.
+          By using BitmapFactory and Base64 functions we were able to convert images into strings that save in the
+          database. These strings could be decoded and displayed again as regular images when we needed to view them in
+          an activity.
         </p><br>
       </div>
       <div class="project-content">
@@ -133,19 +149,10 @@
     </div>
     <div class="project-row">
       <div class="project-content">
-        <h3 style="color: #FC7C0C;">Conclusion</h3>
+        <h3 style="color: #0C88FC;">Conclusion</h3>
         <p>
-          Creating EMUrgency has given me an even more in depth look at what it takes to develop a game in comparison to
-          any of the games I had made previously. Because EMUrgency is available on many different devices, I had to
-          develop the game to adjust accordingly to various screen sizes, and work with the constraints of Android apps.
+          null
         </p><br>
-        <p>
-          And there is still so much work that can be done, as the game still lacks music, sound effects, and many other
-          features I wanted to implement to create a more captivating experience.
-        </p><br>
-        <p class="gray">
-          Google Play and the Google Play logo are trademarks of Google Inc.
-        </p>
       </div>
       <div class="project-content">
       </div>

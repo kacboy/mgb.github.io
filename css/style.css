@@ -292,7 +292,7 @@ h2 a:hover {
 	height: 500px;
 	opacity: 1;
 }
-.project-content img, .project-content figure, .project-content .carousel {
+.project-content img, .project-content figure, .project-content .videoWrapper, .project-content .carousel {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
