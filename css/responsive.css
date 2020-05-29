@@ -54,6 +54,7 @@
     }
     .project-content img,
     .project-content figure,
+    .project-content .videoWrapper,
     .project-content .carousel {
         /* position: unset; */
         top: unset;
