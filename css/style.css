@@ -462,6 +462,10 @@ figure {
     content: "Prototyping / Web Design";
 }
 
+.headingText:hover+#designImgWideshot::after {
+    content: "Branding / Print Design";
+}
+
 
 /* IMAGES */
 
@@ -484,25 +488,29 @@ img {
 }
 
 .headingText:hover+#designImgFlymigos {
-    background-image: url("../img/flymigos.png");
+    background-image: url("../img/thumbs/flymigos.png");
 }
 
 .headingText:hover+#designImgAlana {
-    background-image: url("../img/alana.png");
+    background-image: url("../img/thumbs/alana.png");
 }
 
 .headingText:hover+#designImgEMUrgency {
-    background-image: url("../img/emurgency.png");
+    background-image: url("../img/thumbs/emurgency.png");
 }
 
 .headingText:hover+#designImgWoke {
-    background-image: url("../img/staywoke.png");
+    background-image: url("../img/thumbs/staywoke.png");
 }
 
 .headingText:hover+#designImgIATSU {
-    background-image: url("../img/iatsu.png");
+    background-image: url("../img/thumbs/iatsu.png");
 }
 
 .headingText:hover+#designImgRL {
-    background-image: url("../img/rl.png");
+    background-image: url("../img/thumbs/rl.png");
+}
+
+.headingText:hover+#designImgWideshot {
+    background-image: url("../img/thumbs/wideshot.png");
 }

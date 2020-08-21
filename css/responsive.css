@@ -188,4 +188,7 @@
     code {
         background-color: #404040;
     }
+    .carousel {
+        background: black;
+    }
 }

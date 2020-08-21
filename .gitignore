@@ -4,4 +4,5 @@ files/
 fonts/
 *.ai
 *.psd
+*.xd
 .DS_Store
