@@ -79,8 +79,6 @@ body {
 
 
 /* HIGHLIGHT COLOR */
-
-
 /* https://css-tricks.com/overriding-the-default-text-selection-color-with-css/ */
 
 ::selection {
@@ -241,21 +239,6 @@ ul {
     color: white;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 5%, #77cc77 5%, #77cc77 87.5%, rgba(255, 255, 255, 0) 87.5%);
 }
-
-
-/* FOOTER */
-
-body {
-    /* height: 100%; */
-}
-
-footer {
-    position: relative;
-    bottom: 0;
-    margin: 0 auto 1rem auto;
-    max-width: 1000px;
-}
-
 
 /* MINECRAFT MAP OVERVIEWER */
 
