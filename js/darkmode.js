@@ -1,20 +1,24 @@
-//default to light mode
-var mode = 'light';
-if (localStorage.getItem("mode")){
-   
-//check if there's a saved state already
-   mode = localStorage.getItem("mode");
-} else if (window.matchMedia('(preferes-color-scheme:dark)')){
-   
-//check if dark mode is preferred
-   mode = "dark";
-}
-//update the class based on the mode
-document.documentElement.className = mode;
+const btn = document.querySelector(".btn-toggle");
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
-//when the button is clicked, toggle the mode and save the change in local storage
-document.getElementById('toggleMode').onclick = function(){
-   mode = (mode === 'dark') ? 'light' : 'dark';
-   document.documentElement.className = mode;
-   localStorage.setItem("mode", mode);
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme == "dark") {
+    document.body.classList.toggle("dark-theme");
+} else if (currentTheme == "light") {
+    document.body.classList.toggle("light-theme");
 }
+
+btn.addEventListener("click", function() {
+    if (prefersDarkScheme.matches) {
+        document.body.classList.toggle("light-theme");
+        var theme = document.body.classList.contains("light-theme") ?
+            "light" :
+            "dark";
+    } else {
+        document.body.classList.toggle("dark-theme");
+        var theme = document.body.classList.contains("dark-theme") ?
+            "dark" :
+            "light";
+    }
+    localStorage.setItem("theme", theme);
+});

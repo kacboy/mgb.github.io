@@ -8,6 +8,22 @@
     src: url('../fonts/geomanist-medium-webfont.ttf') format('truetype');
 }
 
+body {
+    --color-green: #77cc77;
+    --color-white: #FAFAFA;
+    --color-black: #0A0A0A;
+    --color-gray: gray;
+    --color-lightgray: lightgray;
+    --color-h2gray: rgb(191, 191, 191);
+}
+
+body.dark-theme {
+    --color-white: #0A0A0A;
+    --color-black: #FAFAFA;
+    --color-lightgray: #404040;
+    --color-h2gray: rgb(44, 44, 44);
+}
+
 html {
     font-size: 16px;
 }
@@ -16,6 +32,8 @@ body {
     font-family: 'Karla', sans-serif;
     font-size: 1rem;
     margin: auto;
+    background-color: var(--color-white);
+    color: var(--color-black);
 }
 
 
@@ -74,32 +92,34 @@ body {
 }
 
 .border {
-    border: 1px solid lightgray;
+    border: 1px solid var(--color-lightgray);
 }
 
 
 /* HIGHLIGHT COLOR */
+
+
 /* https://css-tricks.com/overriding-the-default-text-selection-color-with-css/ */
 
 ::selection {
-    background: #77cc77;
+    background: var(--color-green);
 }
 
 ::-moz-selection {
-    background: #77cc77;
+    background: var(--color-green);
 }
 
 .white-bg {
-    background-color: white;
-    box-shadow: 2px 0 0 white, -0rem 0 0 white;
+    background-color: var(--color-white);
+    box-shadow: 2px 0 0 var(--color-white), -0rem 0 0 var(--color-white);
 }
 
 
 /* NAVIGATION */
 
 nav {
-    background-color: #77cc77;
-    color: white;
+    background-color: var(--color-green);
+    color: var(--color-white);
     position: fixed;
     top: 0;
     width: 100%;
@@ -113,8 +133,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #77cc77;
-    /* background-color: white; */
+    color: var(--color-green);
+    /* background-color: var(--color-white); */
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, white 10%, white 90%, rgba(255, 255, 255, 0) 90%);
 }
 
@@ -151,7 +171,7 @@ p {
 
 p a,
 li a {
-    color: #77cc77;
+    color: var(--color-green);
     font-style: normal;
     text-decoration: underline;
     overflow-wrap: break-word;
@@ -160,17 +180,17 @@ li a {
 p a:hover,
 li a:hover {
     cursor: pointer;
-    color: white;
+    color: var(--color-white);
     text-decoration: none;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, #77cc77 10%, #77cc77 90%, rgba(255, 255, 255, 0) 90%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, var(--color-green) 10%, var(--color-green) 90%, rgba(255, 255, 255, 0) 90%);
 }
 
 .black {
-    color: black;
+    color: var(--color-black);
 }
 
 .gray {
-    color: gray;
+    color: var(--color-gray);
     font-style: italic;
 }
 
@@ -179,7 +199,7 @@ code {
     display: inline-block;
     padding: 0.5rem 1rem;
     font-family: 'Karla';
-    background-color: lightgray;
+    background-color: var(--color-lightgray);
     overflow-wrap: break-word;
 }
 
@@ -194,7 +214,7 @@ h1 {
     margin: 0;
     font-size: 4rem;
     font-family: 'Geomanist-Bold';
-    color: white;
+    color: var(--color-white);
     text-decoration: none;
 }
 
@@ -202,7 +222,7 @@ h3 {
     margin: 0;
     margin-bottom: 1rem;
     font-size: 1.5rem;
-    color: #77cc77;
+    color: var(--color-green);
     font-family: 'Geomanist-Bold';
 }
 
@@ -213,7 +233,7 @@ h1 {
 }
 
 hr {
-    border: 0.5px solid lightgray;
+    border: 0.5px solid var(--color-lightgray);
     margin-bottom: 1rem;
 }
 
@@ -231,14 +251,15 @@ ul {
 
 .social a {
     font-size: 24px;
-    color: #77cc77;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 5%, white 5%, white 87.5%, rgba(255, 255, 255, 0) 87.5%);
+    color: var(--color-green);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 5%, var(--color-white) 5%, var(--color-white) 87.5%, rgba(255, 255, 255, 0) 87.5%);
 }
 
 .social a:hover {
-    color: white;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 5%, #77cc77 5%, #77cc77 87.5%, rgba(255, 255, 255, 0) 87.5%);
+    color: var(--color-white);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 5%, var(--color-green) 5%, var(--color-green) 87.5%, rgba(255, 255, 255, 0) 87.5%);
 }
+
 
 /* MINECRAFT MAP OVERVIEWER */
 
@@ -274,7 +295,7 @@ ul {
 /* FLICKITY */
 
 .carousel {
-    background: white;
+    background: var(--color-white);
     overflow: hidden;
 }
 
@@ -296,15 +317,16 @@ ul {
 
 h2 a {
     /* https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste// */
-    text-shadow: 0px 0px 2px rgb(191, 191, 191);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, lightgray 10%, lightgray 90%, rgba(255, 255, 255, 0) 90%);
+    color: white;
+    text-shadow: 0px 0px 2px var(--color-h2gray);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, var(--color-lightgray) 10%, var(--color-lightgray) 90%, rgba(255, 255, 255, 0) 90%);
 }
 
 h2 a:hover {
     text-shadow: none;
-    background-color: #77cc77;
+    background-color: var(--color-green);
     -webkit-text-stroke-color: transparent;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, #77cc77 10%, #77cc77 90%, rgba(255, 255, 255, 0) 90%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, var(--color-green) 10%, var(--color-green) 90%, rgba(255, 255, 255, 0) 90%);
 }
 
 
@@ -381,7 +403,7 @@ h2 a:hover {
 figcaption {
     text-align: right;
     font-style: italic;
-    color: gray;
+    color: var(--color-gray);
 }
 
 .carousel img {
