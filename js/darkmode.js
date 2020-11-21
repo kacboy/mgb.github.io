@@ -1,3 +1,5 @@
+// https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#combining
+
 const btn = document.querySelector(".btn-toggle");
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
