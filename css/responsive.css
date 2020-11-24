@@ -150,8 +150,8 @@
         --color-h2gray: rgb(44, 44, 44);
     }
     body.light-theme {
-        --color-white: #FAFAFA;
-        --color-black: #0A0A0A;
+        --color-white: white;
+        --color-black: #0B0B0B;
         --color-lightgray: lightgray;
         --color-h2gray: rgb(191, 191, 191);
     }
