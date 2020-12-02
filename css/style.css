@@ -18,7 +18,7 @@ body {
 }
 
 body.dark-theme {
-    --color-white: #0A0A0A;
+    --color-white: black;
     --color-black: #FAFAFA;
     --color-lightgray: #404040;
     --color-h2gray: rgb(44, 44, 44);

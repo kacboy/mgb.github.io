@@ -143,7 +143,7 @@
 @media (prefers-color-scheme: dark) {
     body {
         --color-green: #77cc77;
-        --color-white: #0A0A0A;
+        --color-white: black;
         --color-black: #FAFAFA;
         --color-grey: gray;
         --color-lightgray: #404040;
