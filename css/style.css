@@ -40,15 +40,13 @@ body {
 /* BODY CONTENT MARGINS */
 
 .body-wrapper,
-.nav-content,
-#about-wrapper {
+.nav-content {
     max-width: 1000px;
     margin: auto;
     position: relative;
 }
 
-.body-wrapper,
-#about-wrapper {
+.body-wrapper {
     display: grid;
     height: 100vh;
     place-items: center center;
@@ -84,11 +82,15 @@ body {
     margin: 0;
 }
 
+.noMarginTop {
+    margin-top: 0;
+}
+
 
 /* PROJECT PAGE STUFF */
 
 .details {
-    max-height: 154px;
+    max-height: 111px;
 }
 
 .border {
@@ -143,6 +145,14 @@ nav a:hover {
     font-size: 1.5rem;
     font-family: 'Geomanist-Bold';
     display: inline-block;
+}
+
+#headingDesign {
+    -webkit-text-stroke-width: 0px;
+    margin-top: -1.5rem;
+}
+#headingVideo {
+    margin-bottom: 2rem;
 }
 
 .nav-links {
@@ -274,7 +284,7 @@ ul {
 
 /* VIDEOS EMBED */
 
-.videoWrapper,
+.embedWrapper,
 .map {
     position: relative;
     padding-bottom: 56.25%;
@@ -282,7 +292,7 @@ ul {
     height: 0;
 }
 
-.videoWrapper iframe,
+.embedWrapper iframe,
 .map iframe {
     position: absolute;
     top: 0;
@@ -386,7 +396,7 @@ h2 a:hover {
 
 .project-content img,
 .project-content figure,
-.project-content .videoWrapper,
+.project-content .embedWrapper,
 .project-content .carousel {
     position: relative;
     top: 50%;
@@ -482,6 +492,7 @@ img {
 .headingText:hover+#indexImgMotion,
 .headingText:hover+#indexImgDesign,
 .headingText:hover+#videoImgSounds,
+.headingText:hover+#videoImgMolescope,
 .headingText:hover+#videoImgCCO,
 .headingText:hover+#videoImgSub,
 .headingText:hover+#videoImgStudy,

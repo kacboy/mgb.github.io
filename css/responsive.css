@@ -1,6 +1,5 @@
 @media (max-width: 1000px) {
-    .body-wrapper,
-    #about-wrapper {
+    .body-wrapper {
         margin: 0 1rem;
     }
     .project-wrapper {
@@ -51,7 +50,7 @@
     }
     .project-content img,
     .project-content figure,
-    .project-content .videoWrapper,
+    .project-content .embedWrapper,
     .project-content .carousel {
         /* position: unset; */
         top: unset;
@@ -108,7 +107,7 @@
 
 /* NAV BAR RESIZE TITLE */
 
-@media (max-width: 450px) {
+@media (max-width: 470px) {
     .title span {
         position: absolute;
         top: 1rem;
@@ -119,14 +118,22 @@
         content: "MB";
         color: white;
     }
+    .btn-toggle {
+        display: none;
+    }
 }
 
 
 /* HEIGHT */
-
+@media (max-height: 1020px) {
+    #video-wrapper {
+        position: relative;
+        display: block;
+        height: auto;
+    }
+}
 @media (max-height: 850px) {
-    .body-wrapper,
-    #about-wrapper {
+    .body-wrapper {
         position: relative;
         display: block;
         height: auto;
