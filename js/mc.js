@@ -37,12 +37,17 @@ xhttp.onreadystatechange = function()
   {
     let repos = JSON.parse(this.responseText);
 
+    //https://stackoverflow.com/questions/4726040/javascript-adding-zeros-to-the-beginning-of-a-string-max-length-4-chars
+    function zeroPad(num) {
+      return num.toString().padStart(2, "0");
+    }
+
     repos.forEach((repo)=>{
       if (repo.name == desiredRepo)
       {
         var lastUpdated = new Date(repo.updated_at);
-        var day = lastUpdated.getUTCDate();
-        var month = parseInt(lastUpdated.getUTCMonth())+1;
+        var day = zeroPad(lastUpdated.getUTCDate());
+        var month = zeroPad(parseInt(lastUpdated.getUTCMonth())+1);
         var year = lastUpdated.getUTCFullYear();
         $(dateTagClass).text(`Last updated: ${month}/${day}/${year}`);
       }
