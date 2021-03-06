@@ -1,4 +1,5 @@
 //based on a pen by @robinselmer
+// https://codepen.io/nodws/pen/ZLLXXq
 var url = "https://api.minetools.eu/ping/mc.marcusblackstock.com";
 //https://mcapi.us/server/status?ip=666.fluctis.com&port=25757
 $.getJSON(url, function (r) {
@@ -25,4 +26,28 @@ $.getJSON(url, function (r) {
 
 });
 
-// https://codepen.io/nodws/pen/ZLLXXq
+// https://stackoverflow.com/questions/56279807/is-it-possible-to-automatically-have-the-last-updated-date-on-my-website-changed/56280126
+// https://codepen.io/chelsslehc/pen/eaVXQj?editors=1111
+const desiredRepo = "MCMap";
+const dateTagClass = ".date";
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function()
+{
+  if (this.readyState == 4 && this.status == 200)
+  {
+    let repos = JSON.parse(this.responseText);
+
+    repos.forEach((repo)=>{
+      if (repo.name == desiredRepo)
+      {
+        var lastUpdated = new Date(repo.updated_at);
+        var day = lastUpdated.getUTCDate();
+        var month = parseInt(lastUpdated.getUTCMonth())+1;
+        var year = lastUpdated.getUTCFullYear();
+        $(dateTagClass).text(`Last updated: ${month}/${day}/${year}`);
+      }
+    });
+  }
+};
+xhttp.open("GET", "https://api.github.com/users/kacboy/repos", true);
+xhttp.send();
