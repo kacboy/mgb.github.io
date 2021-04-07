@@ -24,7 +24,7 @@
                 <!-- <a href="motion.html" class="nav-item">Motion</a>  -->
                 <a href="design.html" class="nav-item">Design</a>
                 <a href="about.html" class="nav-item">About</a>
-                <a href="#" class="btn-toggle nav-item mdi mdi-theme-light-dark" title="Toggle dark/light mode"></a>
+                <a href="#" class="btn-toggle nav-item mdi mdi-brightness-6" title="Toggle dark/light mode"></a>
             </div>
         </div>
     </nav>
@@ -36,21 +36,22 @@
                 <h3>Colours</h3><br>
 
                 <div
-                    style="display: inline-block; width:19%; height:50px; background-color:#77cc77; text-align: center;">
-                    <br>#77cc77</div>
+                    style="display: inline-block; width:18%; height:50px; border: 1px solid #77cc77; background-color:#77cc77; text-align: center;">
+                    <br>green</div>
                 <div
-                    style="display: inline-block; width:19%; height:50px; border: 1px solid lightgray; background-color:#fff; text-align: center; color:#000;">
-                    <br>#fff</div>
+                    style="display: inline-block; width:18%; height:50px; border: 1px solid var(--color-lightgray); background-color:#fff; text-align: center; color:#000;">
+                    <br>white</div>
                 <div
-                    style="display: inline-block; width:19%; height:50px; background-color:lightgray; text-align: center; color:#000;">
+                    style="display: inline-block; width:18%; height:50px; border: 1px solid var(--color-lightgray); background-color:var(--color-lightgray); text-align: center; color:var(--color-black);">
                     <br>lightgray</div>
-                <div style="display: inline-block; width:19%; height:50px; background-color:gray; text-align: center;">
+                <div style="display: inline-block; width:18%; height:50px; border: 1px solid gray; background-color:gray; text-align: center;">
                     <br>gray</div>
                 <div
-                    style="display: inline-block; width:19%; height:50px; background-color:#000; color:#fff; text-align: center;">
-                    <br>#000</div>
-
-                <br><br><br>
+                    style="display: inline-block; width:18%; height:50px; border: 1px solid black; background-color:#000; color:#fff; text-align: center;">
+                    <br>black</div>
+                    
+                    <p><br></p>
+                    <code>var(--color-lightgray)</code><br><br><br>
                 <hr><br><br>
 
                 <h3>Text Styles</h3><br>
@@ -60,6 +61,12 @@
 
                 <p class="gray">Caption, sidebar</p>
                 <code>&lt;p class=&quot;gray rightAlign&quot;&gt;Caption, sidebar&lt;/p&gt;</code><br><br><br>
+
+                <blockquote>Quote</blockquote>
+                <code>&lt;blockquote&gt;Quote&lt;/blockquote&gt;</code><br><br><br>
+
+                <code>Code</code><br>
+                <code>&lt;code&gt;Code&lt;/code&gt;</code><br><br><br>
 
                 <h1 class="black">Heading 1</h1>
                 <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code><br><br><br>
@@ -104,16 +111,18 @@
                 <hr><br><br>
 
                 <h3>Content</h3><br>
-                <video src="img/thumbs/sounds.mp4" autoplay loop></video><br>
+                <video src="vid/thumbs/sounds.mp4" autoplay loop></video><br>
                 <code>&lt;video src=&quot;#&quot; autoplay loop&gt;&lt;/video&gt;</code><br><br><br>
 
-                <img src="img/pfp.jpg" alt="Sample" style="transform: unset;">
-                <p class="gray rightAlign">Sample image + caption</p>
+                <figure style="transform: unset; top:unset;">
+                    <img src="img/pfp.jpg" alt="Sample">
+                    <figcaption>Sample image + caption</figcaption>
+                </figure>
                 <code>&lt;figure&gt;<br>&lt;img src=&quot;#&quot; alt=&quot;#&quot;&gt;<br>&lt;figcaption&gt;Sample image + caption&lt;/figcaption&gt;<br>&lt;/figure&gt;</code><br><br><br>
 
                 <div class="carousel" style="transform: unset; top: unset;"
                     data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": false, "autoPlay": false}'>
-                    <div class="carousel-cell"><video src="img/thumbs/alana.mp4" autoplay loop></video></div>
+                    <div class="carousel-cell"><video src="vid/thumbs/alana.mp4" autoplay loop></video></div>
                     <div class="carousel-cell"><img src="img/alana/phones.png" alt="Main Menu"></div>
                     <div class="carousel-cell"><img src="img/alana/slides.png" alt="Schedule"></div>
                     <div class="carousel-cell"><img src="img/alana/angle.png" alt="Schedule"></div>

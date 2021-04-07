@@ -1,39 +1,39 @@
 @font-face {
-    font-family: 'Geomanist-Bold';
-    src: url('../fonts/geomanist-bold-webfont.ttf') format('truetype');
+  font-family: 'Geomanist-Bold';
+  src: url('../fonts/geomanist-bold-webfont.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Geomanist-Medium';
-    src: url('../fonts/geomanist-medium-webfont.ttf') format('truetype');
+  font-family: 'Geomanist-Medium';
+  src: url('../fonts/geomanist-medium-webfont.ttf') format('truetype');
 }
 
 body {
-    --color-green: #77cc77;
-    --color-white: white;
-    --color-black: #0B0B0B;
-    --color-gray: gray;
-    --color-lightgray: lightgray;
-    --color-h2gray: rgb(191, 191, 191);
+  --color-green: #77cc77;
+  --color-white: white;
+  --color-black: #0B0B0B;
+  --color-gray: gray;
+  --color-lightgray: lightgray;
+  --color-h2gray: rgb(191, 191, 191);
 }
 
 body.dark-theme {
-    --color-white: black;
-    --color-black: #FAFAFA;
-    --color-lightgray: #404040;
-    --color-h2gray: rgb(44, 44, 44);
+  --color-white: black;
+  --color-black: #FAFAFA;
+  --color-lightgray: #404040;
+  --color-h2gray: rgb(44, 44, 44);
 }
 
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-    font-family: 'Karla', sans-serif;
-    font-size: 1rem;
-    margin: auto;
-    background-color: var(--color-white);
-    color: var(--color-black);
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  margin: auto;
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
 
 
@@ -41,60 +41,60 @@ body {
 
 .body-wrapper,
 .nav-content {
-    max-width: 1000px;
-    margin: auto;
-    position: relative;
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
 }
 
 .body-wrapper {
-    display: grid;
-    height: 100vh;
-    place-items: center center;
+  display: grid;
+  height: 100vh;
+  place-items: center center;
 }
 
 .body-content {
-    position: absolute;
-    left: 0;
-    padding: 6rem 0;
+  position: absolute;
+  left: 0;
+  padding: 6rem 0;
 }
 
 .project-wrapper {
-    margin: 6rem auto;
-    max-width: 1000px;
+  margin: 6rem auto;
+  max-width: 1000px;
 }
 
 .project-row {
-    margin: 0;
-    display: flex;
-    flex-direction: row;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
 }
 
 .project-content {
-    margin: 1rem 0;
-    width: 100%;
+  margin: 1rem 0;
+  width: 100%;
 }
 
 .project-content p:not(.gray) {
-    padding-right: 1rem;
+  padding-right: 1rem;
 }
 
 .noMargin {
-    margin: 0;
+  margin: 0;
 }
 
 .noMarginTop {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 
 /* PROJECT PAGE STUFF */
 
 .details {
-    max-height: 111px;
+  max-height: 111px;
 }
 
 .border {
-    border: 1px solid var(--color-lightgray);
+  border: 1px solid var(--color-lightgray);
 }
 
 
@@ -104,181 +104,188 @@ body {
 /* https://css-tricks.com/overriding-the-default-text-selection-color-with-css/ */
 
 ::selection {
-    background: var(--color-green);
+  background: var(--color-green);
 }
 
 ::-moz-selection {
-    background: var(--color-green);
+  background: var(--color-green);
 }
 
 .white-bg {
-    background-color: var(--color-white);
-    box-shadow: 2px 0 0 var(--color-white), -0rem 0 0 var(--color-white);
+  background-color: var(--color-white);
+  box-shadow: 2px 0 0 var(--color-white), -0rem 0 0 var(--color-white);
 }
 
 
 /* NAVIGATION */
 
 nav {
-    background-color: var(--color-green);
-    color: var(--color-white);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    padding: 1rem 0;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 1rem 0;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 nav a:hover {
-    color: var(--color-green);
-    /* background-color: var(--color-white); */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, white 10%, white 90%, rgba(255, 255, 255, 0) 90%);
+  color: var(--color-green);
+  /* background-color: var(--color-white); */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, white 10%, white 90%, rgba(255, 255, 255, 0) 90%);
 }
 
 .title {
-    margin: 0;
-    font-size: 1.5rem;
-    font-family: 'Geomanist-Bold';
-    display: inline-block;
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: 'Geomanist-Bold';
+  display: inline-block;
 }
 
 #headingDesign {
-    -webkit-text-stroke-width: 0px;
-    margin-top: -1.5rem;
+  -webkit-text-stroke-width: 0px;
+  margin-top: -1.5rem;
 }
+
 #headingVideo {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .nav-links {
-    font-weight: bold;
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .nav-links a {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 
 /* BODY TEXT STYLES */
 
 .body-content p {
-    max-width: calc(50% - 2rem);
+  max-width: calc(50% - 2rem);
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 p a,
 li a {
-    color: var(--color-green);
-    font-style: normal;
-    text-decoration: underline;
-    overflow-wrap: break-word;
+  color: var(--color-green);
+  font-style: normal;
+  text-decoration: underline;
+  overflow-wrap: break-word;
 }
 
 p a:hover,
 li a:hover {
-    cursor: pointer;
-    color: var(--color-white);
-    text-decoration: none;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, var(--color-green) 10%, var(--color-green) 90%, rgba(255, 255, 255, 0) 90%);
+  cursor: pointer;
+  color: var(--color-white);
+  text-decoration: none;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, var(--color-green) 10%, var(--color-green) 90%, rgba(255, 255, 255, 0) 90%);
 }
 
 .black {
-    color: var(--color-black);
+  color: var(--color-black);
 }
 
 .gray {
-    color: var(--color-gray);
-    font-style: italic;
+  color: var(--color-gray);
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0;
+  padding-left: 15px;
+  border-left: 5px solid var(--color-green);
 }
 
 code {
-    max-width: 500px;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    font-family: 'Karla';
-    background-color: var(--color-lightgray);
-    overflow-wrap: break-word;
+  max-width: 500px;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-family: 'Karla';
+  background-color: var(--color-lightgray);
+  overflow-wrap: break-word;
 }
 
 #favicon {
-    max-width: 50%;
-    float: right;
+  max-width: 50%;
+  float: right;
 }
 
 h2,
 h2 a,
 h1 {
-    margin: 0;
-    font-size: 4rem;
-    font-family: 'Geomanist-Bold';
-    color: var(--color-white);
-    text-decoration: none;
+  margin: 0;
+  font-size: 4rem;
+  font-family: 'Geomanist-Bold';
+  color: var(--color-white);
+  text-decoration: none;
 }
 
 h3 {
-    margin: 0;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    color: var(--color-green);
-    font-family: 'Geomanist-Bold';
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--color-green);
+  font-family: 'Geomanist-Bold';
 }
 
 h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    -webkit-text-stroke-width: 0px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  -webkit-text-stroke-width: 0px;
 }
 
 hr {
-    border: 0.5px solid var(--color-lightgray);
-    margin-bottom: 1rem;
+  border: 0.5px solid var(--color-lightgray);
+  margin-bottom: 1rem;
 }
 
 ul {
-    list-style-type: square;
+  list-style-type: square;
 }
 
 .rightAlign {
-    text-align: right;
+  text-align: right;
 }
 
 .social {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .social a {
-    font-size: 24px;
-    color: var(--color-green);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 5%, var(--color-white) 5%, var(--color-white) 87.5%, rgba(255, 255, 255, 0) 87.5%);
+  font-size: 24px;
+  color: var(--color-green);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 5%, var(--color-white) 5%, var(--color-white) 87.5%, rgba(255, 255, 255, 0) 87.5%);
 }
 
 .social a:hover {
-    color: var(--color-white);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 5%, var(--color-green) 5%, var(--color-green) 87.5%, rgba(255, 255, 255, 0) 87.5%);
+  color: var(--color-white);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 5%, var(--color-green) 5%, var(--color-green) 87.5%, rgba(255, 255, 255, 0) 87.5%);
 }
 
 
 /* MINECRAFT MAP OVERVIEWER */
 
 .map {
-    width: 100%;
+  width: 100%;
 }
 
 .map iframe {
-    border: none;
+  border: none;
 }
 
 
@@ -286,33 +293,33 @@ ul {
 
 .embedWrapper,
 .map {
-    position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 */
-    height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
 }
 
 .embedWrapper iframe,
 .map iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
 /* FLICKITY */
 
 .carousel {
-    background: var(--color-white);
-    overflow: hidden;
+  background: var(--color-white);
+  overflow: hidden;
 }
 
 .carousel-cell {
-    width: 100%;
-    margin-right: 10px;
-    border-radius: 5px;
+  width: 100%;
+  margin-right: 10px;
+  border-radius: 5px;
 }
 
 
@@ -322,117 +329,117 @@ ul {
 /* http://jsfiddle.net/3z8CN/ */
 
 .headingText {
-    display: inline-block;
+  display: inline-block;
 }
 
 h2 a {
-    /* https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste// */
-    color: white;
-    text-shadow: 0px 0px 2px var(--color-h2gray);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, var(--color-lightgray) 10%, var(--color-lightgray) 90%, rgba(255, 255, 255, 0) 90%);
+  /* https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste// */
+  color: white;
+  text-shadow: 0px 0px 2px var(--color-h2gray);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, var(--color-lightgray) 10%, var(--color-lightgray) 90%, rgba(255, 255, 255, 0) 90%);
 }
 
 h2 a:hover {
-    text-shadow: none;
-    background-color: var(--color-green);
-    -webkit-text-stroke-color: transparent;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, var(--color-green) 10%, var(--color-green) 90%, rgba(255, 255, 255, 0) 90%);
+  text-shadow: none;
+  background-color: var(--color-green);
+  -webkit-text-stroke-color: transparent;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, var(--color-green) 10%, var(--color-green) 90%, rgba(255, 255, 255, 0) 90%);
 }
 
 
 /* VIDEO PICTURES */
 
 .imgDiv {
-    z-index: -1;
-    background-image: none;
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: 500px;
-    height: 281px;
-    width: 100%;
-    max-width: 1000px;
-    opacity: 0;
+  z-index: -1;
+  background-image: none;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  height: 281px;
+  width: 100%;
+  max-width: 1000px;
+  opacity: 0;
 }
 
 .imgDiv video {
-    float: right;
-    max-width: 50%;
+  float: right;
+  max-width: 50%;
 }
 
 
 /* HOMEPAGE PICTURES */
 
 .indexImgDiv {
-    top: 50%;
-    transform: translateY(-25%);
-    height: 250px;
-    overflow: hidden;
+  top: 50%;
+  transform: translateY(-25%);
+  height: 250px;
+  overflow: hidden;
 }
 
 .indexImgDiv video {
-    transform: translateY(-5%);
+  transform: translateY(-5%);
 }
 
 
 /* ABOUT PICTURE */
 
 #imgAbout {
-    background-size: 500px;
-    height: 420px;
-    background-image: url("../img/pfp.jpg");
-    opacity: 1;
+  background-size: 500px;
+  height: 420px;
+  background-image: url("../img/pfp.jpg");
+  opacity: 1;
 }
 
 
 /* DESIGN PICTURES */
 
 .designImgDiv {
-    height: 500px;
-    opacity: 1;
+  height: 500px;
+  opacity: 1;
 }
 
 .project-content img,
 .project-content figure,
 .project-content .embedWrapper,
 .project-content .carousel {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .project-content figure img,
 .project-content figure video {
-    position: unset;
-    top: unset;
-    transform: unset;
+  position: unset;
+  top: unset;
+  transform: unset;
 }
 
 figcaption {
-    text-align: right;
-    font-style: italic;
-    color: var(--color-gray);
+  text-align: right;
+  font-style: italic;
+  color: var(--color-gray);
 }
 
 .carousel img {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .carousel video {
-    width: 100%;
-    float: left;
+  width: 100%;
+  float: left;
 }
 
 .project-content .logo {
-    position: unset;
-    top: unset;
-    transform: translateY(0);
+  position: unset;
+  top: unset;
+  transform: translateY(0);
 }
 
 figure {
-    margin: 0;
+  margin: 0;
 }
 
 
@@ -440,52 +447,52 @@ figure {
 
 .headingText:hover+.imgDiv::before,
 .headingText:hover+.imgDiv::after {
-    font-family: 'Karla';
-    font-size: 1rem;
-    -webkit-text-stroke-color: transparent;
-    position: absolute;
-    right: 0;
-    top: -1.5rem;
+  font-family: 'Karla';
+  font-size: 1rem;
+  -webkit-text-stroke-color: transparent;
+  position: absolute;
+  right: 0;
+  top: -1.5rem;
 }
 
 .headingText:hover+.imgDiv::after {
-    top: calc(100% + 0.25rem);
-    text-align: right;
+  top: calc(100% + 0.25rem);
+  text-align: right;
 }
 
 .headingText:hover+#designImgFlymigos::after {
-    content: "Branding / Web Design";
+  content: "Branding / Web Design";
 }
 
 .headingText:hover+#designImgAlana::after {
-    content: "UX Design / Co-op";
+  content: "UX Design / Co-op";
 }
 
 .headingText:hover+#designImgEMUrgency::after {
-    content: "Game Design / Programming";
+  content: "Game Design / Programming";
 }
 
 .headingText:hover+#designImgWoke::after {
-    content: "Prototyping / UX Design";
+  content: "Prototyping / UX Design";
 }
 
 .headingText:hover+#designImgRL::after {
-    content: "UX Design / Programming";
+  content: "UX Design / Programming";
 }
 
 .headingText:hover+#designImgIATSU::after {
-    content: "Prototyping / Web Design";
+  content: "Prototyping / Web Design";
 }
 
 .headingText:hover+#designImgWideshot::after {
-    content: "Branding / Print Design";
+  content: "Branding / Print Design";
 }
 
 
 /* IMAGES */
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .headingText:hover+#indexImgVideo,
@@ -500,33 +507,33 @@ img {
 .headingText:hover+#videoImgVale,
 .headingText:hover+#videoImgRepelevator,
 .headingText:hover+#videoImgGOTY {
-    opacity: 1;
+  opacity: 1;
 }
 
 .headingText:hover+#designImgFlymigos {
-    background-image: url("../img/thumbs/flymigos.png");
+  background-image: url("../img/thumbs/flymigos.png");
 }
 
 .headingText:hover+#designImgAlana {
-    background-image: url("../img/thumbs/alana.png");
+  background-image: url("../img/thumbs/alana.png");
 }
 
 .headingText:hover+#designImgEMUrgency {
-    background-image: url("../img/thumbs/emurgency.png");
+  background-image: url("../img/thumbs/emurgency.png");
 }
 
 .headingText:hover+#designImgWoke {
-    background-image: url("../img/thumbs/staywoke.png");
+  background-image: url("../img/thumbs/staywoke.png");
 }
 
 .headingText:hover+#designImgIATSU {
-    background-image: url("../img/thumbs/iatsu.png");
+  background-image: url("../img/thumbs/iatsu.png");
 }
 
 .headingText:hover+#designImgRL {
-    background-image: url("../img/thumbs/rl.png");
+  background-image: url("../img/thumbs/rl.png");
 }
 
 .headingText:hover+#designImgWideshot {
-    background-image: url("../img/thumbs/wideshot.png");
+  background-image: url("../img/thumbs/wideshot.png");
 }
