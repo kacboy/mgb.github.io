@@ -11,6 +11,9 @@
 
 
 /* ** Apply styles to the parent element */
+body {
+  /* --color-green: #cccc77 !important; */
+}
 
 .Words {
   margin: 0 auto;
@@ -27,11 +30,17 @@
   -webkit-text-size-adjust: 100%;
 }
 
+@media (max-width: 600px) {
+  .Words {
+    padding: 0;
+  }
+}
 
 /* ** Apply common styles to each line of text */
 
 .Words-line {
   height: 50px;
+  line-height: 53px;
   overflow: hidden;
   position: relative;
 }
