@@ -291,6 +291,10 @@ ul {
 
 /* VIDEOS EMBED */
 
+.views::after {
+  content: ' Views';
+}
+
 .embedWrapper,
 .map {
   position: relative;
