@@ -6,26 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Marcus Blackstock / About</title>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="http://marcusblackstock.com/favicon.ico">
-    <link rel="icon" href="http://marcusblackstock.com/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link href="/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-    <nav>
-        <div class="nav-content">
-            <h1 class="title"><a href="index.html"><span>Marcus Blackstock</span></a></h1>
-            <div class="nav-links">
-                <a href="video.html" class="nav-item">Video</a>
-                <!-- <a href="motion.html" class="nav-item">Motion</a> -->
-                <a href="design.html" class="nav-item">Design</a>
-                <a href="about.html" class="nav-item">About</a>
-                <a href="#" class="btn-toggle nav-item mdi mdi-brightness-6" title="Toggle dark/light mode"></a>
-            </div>
-        </div>
-    </nav>
+    <div id="nav-placeholder">
+    </div>
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("/nav.html");
+    });
+    </script>
 
     <div class="body-wrapper" id="about-wrapper">
         <div class="body-content">
@@ -38,8 +34,8 @@
             <p><span class="white-bg">I'm currently working as a video editor at <a
                         href="https://linusmediagroup.com/">Linus Media Group</a>.</span></p>
             <br>
-            <p><span class="white-bg">Take a gander at my <a href="/files/MarcusBlackstock.pdf">resume</a> for more
-                    details!</span></p>
+            <!-- <p><span class="white-bg">Take a gander at my <a href="/files/MarcusBlackstock.pdf">resume</a> for more
+                    details!</span></p> -->
             <div class="social">
                 <a href="https://www.linkedin.com/in/marcus-blackstock-2108b3b4" class="mdi mdi-linkedin mdi-24px"
                     title="Linkedin"></a>
@@ -49,15 +45,13 @@
                 <a href="https://www.youtube.com/channel/UCNRTNlalcpFEfEXaJa8GMUA"
                     class="mdi mdi-youtube-gaming mdi-24px" title="YouTube Gaming"></a>
                 <a href="https://www.twitch.tv/kacboy" class="mdi mdi-twitch mdi-24px" title="Twitch"></a>
-                <a href="https://github.com/kacboy" class="mdi mdi-github mdi-24px" title="GitHub"></a>
-                <!-- <a href="mc.html" class="mdi mdi-minecraft mdi-24px"></a> -->
-                <!-- <a href="https://discord.gg/5mztRFs" class="mdi mdi-discord mdi-24px"></a> -->
+                <!-- <a href="https://github.com/kacboy" class="mdi mdi-github mdi-24px" title="GitHub"></a> -->
                 <a href="mailto:me@marcusblackstock.com" class="mdi mdi-email mdi-24px" title="Email"></a>
             </div>
             <div class="imgDiv" id="imgAbout"></div>
         </div>
     </div>
-    <script src="js/darkmode.js"></script>
+    <script src="/js/darkmode.js"></script>
 </body>
 
 </html>

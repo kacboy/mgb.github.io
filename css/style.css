@@ -34,7 +34,6 @@ html {
   font-size: 16px;
 }
 
-
 /* BODY CONTENT MARGINS */
 
 .body-wrapper,
@@ -132,7 +131,7 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover, .title a:hover {
   color: var(--color-green);
   /* background-color: var(--color-white); */
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, white 10%, white 90%, rgba(255, 255, 255, 0) 90%);
@@ -178,6 +177,7 @@ p {
   margin: 0;
 }
 
+a,
 p a,
 li a {
   color: var(--color-green);
@@ -186,12 +186,25 @@ li a {
   overflow-wrap: break-word;
 }
 
+a:hover,
 p a:hover,
+h1 a:hover,
 li a:hover {
   cursor: pointer;
   color: var(--color-white);
   text-decoration: none;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, var(--color-green) 10%, var(--color-green) 90%, rgba(255, 255, 255, 0) 90%);
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+  text-decoration: none;
+}
+a:active{
+  color: inherit;
 }
 
 .black {
@@ -342,6 +355,7 @@ h2 a {
 }
 
 h2 a:hover {
+  color: white;
   text-shadow: none;
   background-color: var(--color-green);
   -webkit-text-stroke-color: transparent;
