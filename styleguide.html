@@ -19,11 +19,11 @@
     <div id="nav-placeholder">
     </div>
     <script>
-    $(function(){
-      $("#nav-placeholder").load("/nav.html");
-    });
+        $(function () {
+            $("#nav-placeholder").load("/nav.html");
+        });
     </script>
-    
+
     <div class="project-wrapper">
         <div class="project-row">
             <div class="project-content">
@@ -33,21 +33,27 @@
 
                 <div
                     style="display: inline-block; width:18%; height:50px; border: 1px solid #77cc77; background-color:#77cc77; text-align: center;">
-                    <br>green</div>
+                    <br>green
+                </div>
                 <div
                     style="display: inline-block; width:18%; height:50px; border: 1px solid var(--color-lightgray); background-color:#fff; text-align: center; color:#000;">
-                    <br>white</div>
+                    <br>white
+                </div>
                 <div
                     style="display: inline-block; width:18%; height:50px; border: 1px solid var(--color-lightgray); background-color:var(--color-lightgray); text-align: center; color:var(--color-black);">
-                    <br>lightgray</div>
-                <div style="display: inline-block; width:18%; height:50px; border: 1px solid gray; background-color:gray; text-align: center;">
-                    <br>gray</div>
+                    <br>lightgray
+                </div>
+                <div
+                    style="display: inline-block; width:18%; height:50px; border: 1px solid gray; background-color:gray; text-align: center;">
+                    <br>gray
+                </div>
                 <div
                     style="display: inline-block; width:18%; height:50px; border: 1px solid black; background-color:#000; color:#fff; text-align: center;">
-                    <br>black</div>
-                    
-                    <p><br></p>
-                    <code>var(--color-lightgray)</code><br><br><br>
+                    <br>black
+                </div>
+
+                <p><br></p>
+                <code>var(--color-lightgray)</code><br><br><br>
                 <hr><br><br>
 
                 <h3>Text Styles</h3><br>
@@ -83,6 +89,10 @@
                 <h2><a href="#">H2 Link</a></h2>
                 <code>&lt;h2&gt;&lt;a href=&quot;#&quot;&gt;H2 Link&lt;/a&gt;&lt;/h2&gt;</code><br><br><br>
 
+                <input type="search" placeholder="Input" value="" name="s"><input type="submit" value="Input">
+                <br>
+                <code>&lt;input type="search" placeholder="Input" value="" name="s"&gt;&lt;input type="submit" value="Input"&gt;</code><br><br>
+
                 <div class="social">
                     <a href="https://www.linkedin.com/in/marcus-blackstock-2108b3b4"
                         class="mdi mdi-linkedin-box mdi-24px"></a>
@@ -94,34 +104,34 @@
                     <a href="mailto:marcusblackstock@gmail.com" class="mdi mdi-email mdi-24px"></a>
                 </div>
                 <code>
-          &lt;div class=&quot;social&quot;&gt;<br>
-          &lt;a href=&quot;#&quot; class=&quot;mdi mdi-linkedin-box mdi-24px&quot;&gt;&lt;/a&gt;<br>
-          &lt;a href=&quot;#&quot; class=&quot;mdi mdi-twitter mdi-24px&quot;&gt;&lt;/a&gt;<br>
-          &lt;a href=&quot;#&quot; class=&quot;mdi mdi-youtube mdi-24px&quot;&gt;&lt;/a&gt;<br>
-          &lt;a href=&quot;#&quot;<br>
-            class=&quot;mdi mdi-google-controller mdi-24px&quot;&gt;&lt;/a&gt;<br>
-          &lt;a href=&quot;#&quot; class=&quot;mdi mdi-email mdi-24px&quot;&gt;&lt;/a&gt;<br>&lt;/div&gt;
-        </code>
+                    &lt;div class=&quot;social&quot;&gt;<br>
+                    &lt;a href=&quot;#&quot; class=&quot;mdi mdi-linkedin-box mdi-24px&quot;&gt;&lt;/a&gt;<br>
+                    &lt;a href=&quot;#&quot; class=&quot;mdi mdi-twitter mdi-24px&quot;&gt;&lt;/a&gt;<br>
+                    &lt;a href=&quot;#&quot; class=&quot;mdi mdi-youtube mdi-24px&quot;&gt;&lt;/a&gt;<br>
+                    &lt;a href=&quot;#&quot;<br>
+                        class=&quot;mdi mdi-google-controller mdi-24px&quot;&gt;&lt;/a&gt;<br>
+                    &lt;a href=&quot;#&quot; class=&quot;mdi mdi-email mdi-24px&quot;&gt;&lt;/a&gt;<br>&lt;/div&gt;
+                </code>
 
                 <br><br><br>
                 <hr><br><br>
 
                 <h3>Content</h3><br>
-                <video src="vid/thumbs/sounds.mp4" autoplay loop></video><br>
+                <video src="/vid/thumbs/sounds.mp4" autoplay loop></video><br>
                 <code>&lt;video src=&quot;#&quot; autoplay loop&gt;&lt;/video&gt;</code><br><br><br>
 
                 <figure style="transform: unset; top:unset;">
-                    <img src="img/pfp.jpg" alt="Sample">
+                    <img src="/img/pfp.jpg" alt="Sample">
                     <figcaption>Sample image + caption</figcaption>
                 </figure>
                 <code>&lt;figure&gt;<br>&lt;img src=&quot;#&quot; alt=&quot;#&quot;&gt;<br>&lt;figcaption&gt;Sample image + caption&lt;/figcaption&gt;<br>&lt;/figure&gt;</code><br><br><br>
 
                 <div class="carousel" style="transform: unset; top: unset;"
                     data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": false, "autoPlay": false}'>
-                    <div class="carousel-cell"><video src="vid/thumbs/alana.mp4" autoplay loop></video></div>
-                    <div class="carousel-cell"><img src="img/alana/phones.png" alt="Main Menu"></div>
-                    <div class="carousel-cell"><img src="img/alana/slides.png" alt="Schedule"></div>
-                    <div class="carousel-cell"><img src="img/alana/angle.png" alt="Schedule"></div>
+                    <div class="carousel-cell"><video src="/vid/thumbs/alana.mp4" autoplay loop></video></div>
+                    <div class="carousel-cell"><img src="/img/alana/phones.png" alt="Main Menu"></div>
+                    <div class="carousel-cell"><img src="/img/alana/slides.png" alt="Schedule"></div>
+                    <div class="carousel-cell"><img src="/img/alana/angle.png" alt="Schedule"></div>
                 </div>
                 <code>
           &lt;div class=&quot;carousel&quot; style=&quot;transform: unset; top: unset;&quot;

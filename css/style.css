@@ -166,6 +166,31 @@ nav a:hover, .title a:hover {
   margin-left: 1rem;
 }
 
+input {
+  font-family: 'Karla', sans-serif;
+  height: 2rem;
+
+  border-radius: 0;
+}
+input[type=search]::placeholder{
+  color: var(--color-gray);
+}
+input[type=search] {
+  color: var(--color-white);
+  background-color: white;
+  border: 1px solid var(--color-lightgray);
+  padding: 0 0.5rem;
+}
+input[type=submit] {
+  color: var(--color-black);
+  background-color: var(--color-lightgray);
+  font-weight: bold;
+  border:none;
+  padding: 0 1rem;
+}
+input[type=submit]:hover {
+  background-color: var(--color-green);
+}
 
 /* BODY TEXT STYLES */
 
