@@ -2,25 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Marcus Blackstock / Video</title>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <link href="/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="icon" href="/favicon.ico">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="header"></div>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+        });
+    </script>
 </head>
 
 <body>
-    <div id="nav-placeholder">
-    </div>
+    <div id="nav-placeholder"></div>
     <script>
-    $(function(){
-      $("#nav-placeholder").load("/nav.html");
-    });
+        $(function () {
+            $("#nav-placeholder").load("/nav.html");
+        });
     </script>
 
     <div class="body-wrapper" id="video-wrapper">
@@ -48,6 +45,13 @@
             </div>
             <br>
             <div class="headingText">
+                <h2><a href="videos/techlinked.html">Techlinked</a></h2>
+            </div>
+            <div class="imgDiv" id="videoImgMolescope">
+                <video src="vid/thumbs/shortcircuit.mp4" autoplay loop></video>
+            </div>
+            <br>
+            <div class="headingText">
                 <h2><a href="videos/molescope.html">MoleScope</a></h2>
             </div>
             <div class="imgDiv" id="videoImgMolescope">
@@ -59,20 +63,6 @@
             </div>
             <div class="imgDiv" id="videoImgCCO">
                 <video src="vid/thumbs/cco.mp4" autoplay loop></video>
-            </div>
-            <br>
-            <div class="headingText">
-                <h2><a href="videos/truncate.html">Truncate</a></h2>
-            </div>
-            <div class="imgDiv" id="videoImgTruncate">
-                <video src="vid/thumbs/truncate.mp4" autoplay loop></video>
-            </div>
-            <br>
-            <div class="headingText">
-                <h2><a href="videos/repelevator.html">Repelevator</a></h2>
-            </div>
-            <div class="imgDiv" id="videoImgRepelevator">
-                <video src="vid/thumbs/repelevator.mp4" autoplay loop></video>
             </div>
             <br>
             <div class="headingText">
@@ -90,10 +80,10 @@
             </div>
             <br>
             <div class="headingText">
-                <h2><a href="videos/goty.html">GOTY 2018</a></h2>
+                <h2><a href="videos/truncate.html">Truncate</a></h2>
             </div>
-            <div class="imgDiv" id="videoImgGOTY">
-                <video src="vid/thumbs/goty.mp4" autoplay loop></video>
+            <div class="imgDiv" id="videoImgTruncate">
+                <video src="vid/thumbs/truncate.mp4" autoplay loop></video>
             </div>
         </div>
     </div>

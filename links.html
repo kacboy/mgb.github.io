@@ -2,16 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Marcus Blackstock / Links</title>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <link href="/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="icon" href="/favicon.ico">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="header"></div>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+        });
+    </script>
 </head>
 
 <body>
@@ -43,11 +41,21 @@
                 <h2><a class="mdi mdi-youtube-gaming" href="https://www.youtube.com/channel/UCNRTNlalcpFEfEXaJa8GMUA">
                         Gaming</a></h2>
             </div>
-            <div class="social">
+            <br>
+            <div class="headingText">
+                <h2><a class="mdi mdi-linkedin" href="https://www.linkedin.com/in/marcus-blackstock-2108b3b4">
+                        LinkedIn</a></h2>
+            </div>
+            <br>
+            <div class="headingText">
+                <h2><a class="mdi mdi-email" href="mailto:me@marcusblackstock.com">
+                        Email</a></h2>
+            </div>
+            <!-- <div class="social">
                 <a href="https://www.linkedin.com/in/marcus-blackstock-2108b3b4" class="mdi mdi-linkedin mdi-24px"
                     title="Linkedin"></a>
                 <a href="mailto:me@marcusblackstock.com" class="mdi mdi-email mdi-24px" title="Email"></a>
-            </div>
+            </div> -->
         </div>
     </div>
     <script src="/js/darkmode.js"></script>

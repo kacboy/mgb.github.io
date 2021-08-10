@@ -2,16 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Marcus Blackstock / Design</title>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <link href="/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="icon" href="/favicon.ico">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="header"></div>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+        });
+    </script>
 </head>
 
 <body>
@@ -26,6 +24,18 @@
     <div class="body-wrapper">
         <div class="body-content">
             <h3>Design Projects</h3>
+            <div class="headingText">
+                <h2><a href="designs/thumbnails.html">Thumbnails</a></h2>
+            </div>
+            <div class="imgDiv designImgDiv gray" id="designImgThumbs"></div>
+            <br>
+
+            <div class="headingText">
+                <h2><a href="designs/wideshot.html">Wideshot</a></h2>
+            </div>
+            <div class="imgDiv designImgDiv gray" id="designImgWideshot"></div>
+            <br>
+
             <div class="headingText">
                 <h2><a href="designs/rltracker.html">RL Match Tracker</a></h2>
             </div>
@@ -49,23 +59,6 @@
             </div>
             <div class="imgDiv designImgDiv gray" id="designImgEMUrgency"></div>
             <br>
-
-            <div class="headingText">
-                <h2><a href="designs/wideshot.html">Wideshot</a></h2>
-            </div>
-            <div class="imgDiv designImgDiv gray" id="designImgWideshot"></div>
-            <br>
-
-            <div class="headingText">
-                <h2><a href="designs/staywoke.html">Stay Woke</a></h2>
-            </div>
-            <div class="imgDiv designImgDiv gray" id="designImgWoke"></div>
-            <br>
-
-            <!-- <div class="headingText">
-                <h2><a href="designs/iatsu.html">IATSU</a></h2>
-            </div>
-            <div class="imgDiv designImgDiv gray" id="designImgIATSU"></div> -->
         </div>
     </div>
     <script src="/js/darkmode.js"></script>

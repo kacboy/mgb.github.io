@@ -181,6 +181,9 @@ input[type=search] {
   border: 1px solid var(--color-lightgray);
   padding: 0 0.5rem;
 }
+input[type=search]:active, input[type=search]:focus {
+  border: 1px solid var(--color-green);
+}
 input[type=submit] {
   color: var(--color-black);
   background-color: var(--color-lightgray);
@@ -561,14 +564,6 @@ img {
 
 .headingText:hover+#designImgEMUrgency {
   background-image: url("../img/thumbs/emurgency.png");
-}
-
-.headingText:hover+#designImgWoke {
-  background-image: url("../img/thumbs/staywoke.png");
-}
-
-.headingText:hover+#designImgIATSU {
-  background-image: url("../img/thumbs/iatsu.png");
 }
 
 .headingText:hover+#designImgRL {
