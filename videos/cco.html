@@ -8,18 +8,14 @@
     <script>
         $(function () {
             $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#footer").load("/footer.html");
         });
     </script>
 </head>
 
 <body>
-    <div id="nav-placeholder">
-    </div>
-    <script>
-    $(function(){
-      $("#nav-placeholder").load("/nav.html");
-    });
-    </script>
+    <div id="nav-placeholder"></div>
 
     <div class="project-wrapper">
         <h1 class="black" id="headingVideo">Spotlight: CCO SFU</h1>
@@ -32,7 +28,7 @@
                 <p>
                     This is a university club interview & spotlight video I edited and filmed as the lead Multimedia
                     Editor at The Peak. These club spotlight videos have a long established format and style but I
-                    enjoyed trying to edit a variety of b-roll in to keep the visuals
+                    still enjoyed trying to edit a variety of b-roll in to keep the visuals
                     interesting in such a short video.
                 </p>
             </div>
@@ -44,7 +40,7 @@
             </div>
         </div>
     </div>
-    <script src="/js/darkmode.js"></script>
+    <div id="footer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/js/views.js"></script>
 </body>

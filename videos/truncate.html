@@ -8,18 +8,14 @@
     <script>
         $(function () {
             $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#footer").load("/footer.html");
         });
     </script>
 </head>
 
 <body>
-    <div id="nav-placeholder">
-    </div>
-    <script>
-    $(function(){
-      $("#nav-placeholder").load("/nav.html");
-    });
-    </script>
+    <div id="nav-placeholder"></div>
 
     <div class="project-wrapper">
         <h1 class="black" id="headingVideo">Truncate - Short Film</h1>
@@ -29,7 +25,7 @@
         </div>
         <div class="project-row">
             <div class="project-content">
-                <p>This is a narrative short film I worked on as a course project with a small group of five over five
+                <p>This is a narrative short film I worked on as a university  project with a group of five students over five
                     weeks. I directed, edited, and co-wrote the film, I also filmed most of the interior scenes. It was
                     very well received with 8 nominations
                     among the 30~ films that semester, and we won Best Film and Best Editing.</p>
@@ -52,7 +48,7 @@
             </div>
         </div>
     </div>
-    <script src="/js/darkmode.js"></script>
+    <div id="footer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/js/views.js"></script>
 </body>

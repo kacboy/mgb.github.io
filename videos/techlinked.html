@@ -2,49 +2,40 @@
 <html lang="en">
 
 <head>
-    <title>Marcus Blackstock / Techlinked</title>
+    <title>Marcus Blackstock / TechLinked</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <div id="header"></div>
     <script>
         $(function () {
             $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#footer").load("/footer.html");
         });
     </script>
 </head>
 
 <body>
-    <div id="nav-placeholder">
-    </div>
-    <script>
-    $(function(){
-      $("#nav-placeholder").load("/nav.html");
-    });
-    </script>
+    <div id="nav-placeholder"></div>
 
     <div class="project-wrapper">
-        <h1 class="black" id="headingVideo">Building A $10,000 PC for ROBLOX</h1>
+        <h1 class="black" id="headingVideo">Fired by a COMPUTER?!</h1>
         <div class="embedWrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gH_c4sGDrPg?" frameborder="0"
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aleEl74qkXU?" frameborder="0"
                 allowfullscreen></iframe>
         </div>
         <div class="project-row">
             <div class="project-content">
                 <p>
-                    This is the most successful <a href="https://www.youtube.com/user/LinusTechTips">Linus Tech Tips</a>
-                    video I've edited. It was partially scripted at the beginning but was for the most part just Linus
-                    building the PC in a freestyle 'vlog' format, meaning
-                    I had to cut down a few hours of footage down to under 20 minutes. I also got to film the footage
-                    for the integrated ad for fidget spinner key-caps, which was a first for me at <a
-                        href="https://linusmediagroup.com/">LMG</a>.
+                    This episode of <a href="https://www.youtube.com/c/techlinked/">TechLinked</a> that I've edited so far. TechLinked is <a href="https://linusmediagroup.com/">LMG's</a> thrice-a-week tech news show that gets written, filmed, edited, and published in one day each time. It's very challenging and fun to edit these videos but I love the laid-back attitude that it brings because of the quick turnaround.
                 </p>
             </div>
             <div class="project-content rightAlign">
                 <p class="gray">
-                    Published May 19 2021<br><span class="views"></span></p>
+                    Published Jun 30 2021<br><span class="views"></span></p>
             </div>
         </div>
     </div>
-    <script src="/js/darkmode.js"></script>
+    <div id="footer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/js/views.js"></script>
 </body>

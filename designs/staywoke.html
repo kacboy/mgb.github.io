@@ -6,20 +6,16 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <div id="header"></div>
   <script>
-      $(function () {
-          $("#header").load("/header.html");
-      });
-  </script>
+    $(function () {
+        $("#header").load("/header.html");
+        $("#nav-placeholder").load("/nav.html");
+        $("#footer").load("/footer.html");
+    });
+</script>
 </head>
 
 <body>
-  <div id="nav-placeholder">
-  </div>
-  <script>
-  $(function(){
-    $("#nav-placeholder").load("/nav.html");
-  });
-  </script>
+  <div id="nav-placeholder"></div>
 
   <div class="project-wrapper">
     <div class="project-row">
@@ -202,8 +198,7 @@
       </div>
     </div>
   </div>
-  <script src="/js/darkmode.js"></script>
-  <script src="/js/flickity.pkgd.min.js"></script>
+  <div id="footer"></div>
 </body>
 
 </html>

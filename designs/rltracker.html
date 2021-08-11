@@ -8,18 +8,14 @@
     <script>
         $(function () {
             $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#footer").load("/footer.html");
         });
     </script>
 </head>
 
 <body>
-    <div id="nav-placeholder">
-    </div>
-    <script>
-    $(function(){
-      $("#nav-placeholder").load("/nav.html");
-    });
-    </script>
+    <div id="nav-placeholder"></div>
 
     <div class="project-wrapper">
         <div class="project-row">
@@ -133,7 +129,7 @@
                     the application to be capable of what we pitched and it was something I could see myself using.
                     Lastly, a huge thing I wish we put more
                     effort into was figuring how to use Git so collaborating on our codebase would have been easier. We
-                    were fortunate in that we didn't have any major issues just zipping up our cide to each other.
+                    were fortunate in that we didn't have any major issues just zipping up our code for each other.
                 </p><br>
             </div>
             <div class="project-content">
@@ -144,7 +140,7 @@
             </div>
         </div>
     </div>
-    <script src="/js/darkmode.js"></script>
+    <div id="footer"></div>
 </body>
 
 </html>

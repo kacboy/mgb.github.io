@@ -8,18 +8,14 @@
     <script>
         $(function () {
             $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#footer").load("/footer.html");
         });
     </script>
 </head>
 
 <body>
-    <div id="nav-placeholder">
-    </div>
-    <script>
-    $(function(){
-      $("#nav-placeholder").load("/nav.html");
-    });
-    </script>
+    <div id="nav-placeholder"></div>
 
     <div class="project-wrapper">
         <h1 class="black" id="headingVideo">MoleScope Lite</h1>
@@ -30,7 +26,7 @@
         <div class="project-row">
             <div class="project-content">
                 <p>
-                    This was the first public-facing marketing video of MetaOptima’s latest product, MoleScope Lite. The
+                    This was the first public-facing marketing video of <a href="https://www.metaoptima.com/">MetaOptima’s</a> latest product, MoleScope Lite. The
                     product is a more budget and patient-friendly alternative to earlier MoleScope models. It provides
                     patients with the ability to remotely and routinely
                     submit their moles/spots for professional review. This video was created to demonstrate the
@@ -49,7 +45,9 @@
             </div>
         </div>
     </div>
-    <script src="/js/darkmode.js"></script>
+    <div id="footer"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/views.js"></script>
 </body>
 
 </html>

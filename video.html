@@ -8,17 +8,14 @@
     <script>
         $(function () {
             $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#footer").load("/footer.html");
         });
     </script>
 </head>
 
 <body>
     <div id="nav-placeholder"></div>
-    <script>
-        $(function () {
-            $("#nav-placeholder").load("/nav.html");
-        });
-    </script>
 
     <div class="body-wrapper" id="video-wrapper">
         <div class="body-content">
@@ -45,7 +42,7 @@
             </div>
             <br>
             <div class="headingText">
-                <h2><a href="videos/techlinked.html">Techlinked</a></h2>
+                <h2><a href="videos/techlinked.html">TechLinked</a></h2>
             </div>
             <div class="imgDiv" id="videoImgMolescope">
                 <video src="vid/thumbs/shortcircuit.mp4" autoplay loop></video>
@@ -87,7 +84,7 @@
             </div>
         </div>
     </div>
-    <script src="/js/darkmode.js"></script>
+    <div id="footer"></div>
 </body>
 
 </html>

@@ -6,20 +6,16 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <div id="header"></div>
   <script>
-      $(function () {
-          $("#header").load("/header.html");
-      });
-  </script>
+    $(function () {
+        $("#header").load("/header.html");
+        $("#nav-placeholder").load("/nav.html");
+        $("#footer").load("/footer.html");
+    });
+</script>
 </head>
 
 <body>
-  <div id="nav-placeholder">
-  </div>
-  <script>
-  $(function(){
-    $("#nav-placeholder").load("/nav.html");
-  });
-  </script>
+  <div id="nav-placeholder"></div>
 
   <div class="project-wrapper">
     <div class="project-row">
@@ -83,7 +79,7 @@
     <div class="project-row">
       <div class="project-content">
         <h3 style="color: #e44f50;">Iteration</h3>
-        <p>I would show nearly all my digital iterations to my client to see what direction they liked best before
+        <p>I would show nearly all my digital iterations to the client to see what direction they liked best before
           diving
           super deep into any version in particular. I think I went through 4 or 5 cycles of sending in all my digital
           iterations by the time we got to the final version. Dozens of minor tweaks and general polish/alignments
@@ -138,8 +134,7 @@
     </div>
     <a href="https://www.flymigos.com/"><img class="border" src="../img/flymigos/website1.jpg" alt="website"></a>
   </div>
-  <script src="/js/darkmode.js"></script>
-  <script src="/js/flickity.pkgd.min.js"></script>
+  <div id="footer"></div>
 </body>
 
 </html>

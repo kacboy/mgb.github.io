@@ -8,18 +8,14 @@
     <script>
         $(function () {
             $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#footer").load("/footer.html");
         });
     </script>
 </head>
 
 <body>
-    <div id="nav-placeholder">
-    </div>
-    <script>
-    $(function(){
-      $("#nav-placeholder").load("/nav.html");
-    });
-    </script>
+    <div id="nav-placeholder"></div>
 
     <div class="project-wrapper">
         <div class="project-row">
@@ -53,7 +49,7 @@
                 <p>
                     EMUrgency (Extravehicular Mobility Unit routine gone extremely not cool yo) is a space-themed
                     Android game I developed in my spare time over several months starting in late August 2016. I was
-                    expanding upon skills developed in IAT courses such as Animated
+                    expanding upon skills developed in my university courses such as Animated
                     Intro to Programming and Digital Games. I had been slowly developing it and I published <a
                         href="https://play.google.com/store/apps/details?id=processing.test.emurgency&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">v1.0
                         on Google Play</a> on February 2nd, 2017.
@@ -83,7 +79,7 @@
                 <h3 style="color: #CCCC3D;">Gameplay</h3>
                 <p>
                     The gameplay of EMUrgency most closely resembles endless runner type games in it’s procedural
-                    challenge. However, the gameplay was result of my approach to creating a Processing game for
+                    nature. However, the gameplay was result of my approach to creating a Processing game for
                     Android, from the controls perspective. The most popular mobile
                     games commonly use very minimal input while also giving the player freedom to control the game by
                     touching anywhere on the screen instead of using virtual buttons.
@@ -146,7 +142,7 @@
             </div>
         </div>
     </div>
-    <script src="/js/darkmode.js"></script>
+    <div id="footer"></div>
 </body>
 
 </html>

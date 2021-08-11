@@ -8,18 +8,14 @@
     <script>
         $(function () {
             $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#footer").load("/footer.html");
         });
     </script>
 </head>
 
 <body>
-    <div id="nav-placeholder">
-    </div>
-    <script>
-    $(function(){
-      $("#nav-placeholder").load("/nav.html");
-    });
-    </script>
+    <div id="nav-placeholder"></div>
 
     <div class="project-wrapper">
         <div class="project-row">
@@ -27,6 +23,7 @@
                 <h2 class="black" id="headingDesign">Alana</h2>
                 <!-- <img src="../img/alana/logo.png" class="logo"> -->
                 <h3 style="color: #5295C0;">UX / Graphic Design Co-op</h3>
+                <p><a href="https://www.plasmatic.ai/solution">View website ></a></p><br>
             </div>
             <div class="project-content details">
                 <p class="gray rightAlign">
@@ -54,10 +51,6 @@
                     the overall structure in the front
                     and back-ends. I was brought on to further build, refine, and optimize the experience that was laid
                     out before me. </p>
-                <br>
-                <p>For more info on this project, <a href="mailto:marcusblackstock@gmail.com">send me an email</a> and
-                    we can chat!
-                </p>
             </div>
             <div class="project-content">
                 <div class="carousel"
@@ -70,8 +63,7 @@
             </div>
         </div>
     </div>
-    <script src="/js/darkmode.js"></script>
-    <script src="/js/flickity.pkgd.min.js"></script>
+    <div id="footer"></div>
 </body>
 
 </html>

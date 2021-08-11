@@ -8,18 +8,14 @@
     <script>
         $(function () {
             $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#footer").load("/footer.html");
         });
     </script>
 </head>
 
 <body>
-    <div id="nav-placeholder">
-    </div>
-    <script>
-    $(function(){
-      $("#nav-placeholder").load("/nav.html");
-    });
-    </script>
+    <div id="nav-placeholder"></div>
 
     <div class="project-wrapper">
         <h1 class="black" id="headingVideo">THE VALE PS4 INTERVIEW: Audio-Based Game for Visually Impaired</h1>
@@ -32,7 +28,7 @@
                 <p>This is one of the preview/interview videos I made for <a href="https://www.pushsquare.com/">Push
                         Square</a> when they sent me to PAX West 2019 in Seattle. I recorded about a dozen interviews
                     with various developers on the convention showfloor
-                    and in private demo suites. So far, 5 of those interviews have been published on the channel.
+                    and in private demo suites. This was easily the most interesting game I had the pleasure of trying out during that weekend.
                 </p>
             </div>
             <div class="project-content rightAlign">
@@ -41,7 +37,7 @@
             </div>
         </div>
     </div>
-    <script src="/js/darkmode.js"></script>
+    <div id="footer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/js/views.js"></script>
 </body>

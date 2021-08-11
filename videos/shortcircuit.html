@@ -8,18 +8,14 @@
     <script>
         $(function () {
             $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#footer").load("/footer.html");
         });
     </script>
 </head>
 
 <body>
-    <div id="nav-placeholder">
-    </div>
-    <script>
-    $(function(){
-      $("#nav-placeholder").load("/nav.html");
-    });
-    </script>
+    <div id="nav-placeholder"></div>
 
     <div class="project-wrapper">
         <h1 class="black" id="headingVideo">Apple cares about Android! - Beats Studio Buds</h1>
@@ -30,10 +26,11 @@
         <div class="project-row">
             <div class="project-content">
                 <p>
-                    This is my favourite <a href="https://www.youtube.com/c/ShortCircuit/">ShortCircuit</a> video that I've edited so far, ShortCircuit is the tech unboxing
-                    channel of <a href="https://linusmediagroup.com/">Linus Media Group</a>. It was also the second time I filmed a full ShortCircuit video at
-                    LMG. I edited this video in one full workday. Icouldn't help from laughing throughout filming as
-                    well as during post-production.
+                    This is my favourite <a href="https://www.youtube.com/c/ShortCircuit/">ShortCircuit</a> videos that
+                    I've edited so far, ShortCircuit is the tech unboxing channel of <a
+                        href="https://linusmediagroup.com/">Linus Media Group</a>. It was also the second time
+                    I filmed a full video at LMG. It needed a very quick turnaround due to a Monday morning release embargo so I
+                    had to edit this video in one Friday. On the plus side of the intense deadline, I couldn't help from laughing at the host during filming and editing.
                 </p>
             </div>
             <div class="project-content rightAlign">
@@ -42,7 +39,7 @@
             </div>
         </div>
     </div>
-    <script src="/js/darkmode.js"></script>
+    <div id="footer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/js/views.js"></script>
 </body>
