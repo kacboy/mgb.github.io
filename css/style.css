@@ -507,29 +507,20 @@ figure {
 .headingText:hover+#designImgFlymigos::after {
   content: "Branding / Web Design";
 }
-
 .headingText:hover+#designImgAlana::after {
-  content: "UX Design / Co-op";
+  content: "UX Design / Prototyping";
 }
-
 .headingText:hover+#designImgEMUrgency::after {
   content: "Game Design / Programming";
 }
-
-.headingText:hover+#designImgWoke::after {
-  content: "Prototyping / UX Design";
-}
-
 .headingText:hover+#designImgRL::after {
   content: "UX Design / Programming";
 }
-
-.headingText:hover+#designImgIATSU::after {
-  content: "Prototyping / Web Design";
-}
-
 .headingText:hover+#designImgWideshot::after {
-  content: "Branding / Print Design";
+  content: "Branding / Print Publishing";
+}
+.headingText:hover+#designImgThumbs::after {
+  content: "Visual Design / Branding";
 }
 
 
@@ -539,37 +530,66 @@ img {
   width: 100%;
 }
 
+.thumbnail {
+  max-width:calc(calc(100% - 3rem) / 4);
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  
+  display: inline-block;
+  margin: 0;
+}
+.thumbnail img {
+  transform: none;
+  top: unset;
+  vertical-align: middle;
+  position: unset;
+}
+.thumbnail:nth-of-type(4n) {
+  padding-right: 0rem;
+  float: right;
+}
+
 .headingText:hover+#indexImgVideo,
 .headingText:hover+#indexImgMotion,
 .headingText:hover+#indexImgDesign,
-.headingText:hover+#videoImgSounds,
-.headingText:hover+#videoImgMolescope,
-.headingText:hover+#videoImgCCO,
-.headingText:hover+#videoImgSub,
-.headingText:hover+#videoImgStudy,
-.headingText:hover+#videoImgTruncate,
-.headingText:hover+#videoImgVale,
-.headingText:hover+#videoImgRepelevator,
-.headingText:hover+#videoImgGOTY {
+.headingText:hover+#videoImg {
   opacity: 1;
 }
 
 .headingText:hover+#designImgFlymigos {
   background-image: url("../img/thumbs/flymigos.png");
 }
-
 .headingText:hover+#designImgAlana {
   background-image: url("../img/thumbs/alana.png");
 }
-
 .headingText:hover+#designImgEMUrgency {
   background-image: url("../img/thumbs/emurgency.png");
 }
-
 .headingText:hover+#designImgRL {
   background-image: url("../img/thumbs/rl.png");
 }
-
 .headingText:hover+#designImgWideshot {
   background-image: url("../img/thumbs/wideshot.png");
+}
+.headingText:hover+#designImgThumbs {
+  background-image: url("../img/thumbs/thumbs2.png");
+}
+
+.headingText:hover+#designImgLeo1 {
+  background-image: url("../img/leo/leo-1.gif");
+}
+.headingText:hover+#designImgLeo2 {
+  background-image: url("../img/leo/leo-2.gif");
+}
+.headingText:hover+#designImgLeo3 {
+  background-image: url("../img/leo/leo-3.gif");
+}
+.headingText:hover+#designImgLeo4 {
+  background-image: url("../img/leo/leo-4.gif");
+}
+.headingText:hover+#designImgLeo5 {
+  background-image: url("../img/leo/leo-5.gif");
+}
+.headingText:hover+#designImgLeo6 {
+  background-image: url("../img/leo/leo-6.gif");
 }

@@ -118,7 +118,7 @@
         content: "MB";
         color: white;
     }
-    .btn-toggle {
+    .nav-links .btn-toggle {
         display: none;
     }
 }
