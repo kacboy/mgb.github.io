@@ -262,6 +262,7 @@ code {
 #favicon {
   max-width: 50%;
   float: right;
+  image-rendering: pixelated;
 }
 
 h2,
