@@ -45,7 +45,7 @@ xhttp.onreadystatechange = function()
     repos.forEach((repo)=>{
       if (repo.name == desiredRepo)
       {
-        var lastUpdated = new Date(repo.updated_at);
+        var lastUpdated = new Date(repo.pushed_at);
         var day = zeroPad(lastUpdated.getUTCDate())-1;
         var month = zeroPad(parseInt(lastUpdated.getUTCMonth())+1);
         var year = lastUpdated.getUTCFullYear();
