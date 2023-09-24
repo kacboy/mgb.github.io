@@ -5,6 +5,9 @@
     .project-wrapper {
         margin: 6rem 1rem 6rem 1rem;
     }
+    .body-wrapper .project-wrapper{
+        margin: 6rem 0rem 6rem 0rem;
+    }
     nav {
         padding: 1rem;
     }
@@ -30,11 +33,23 @@
 }
 
 @media (max-width: 800px) {
-    .project-content:nth-child(2) {
+    /* .project-content:nth-child(2) {
         max-width: 40%;
+    } */
+    .project-content .rightAlign {
+        max-width: 40%;
+    }
+    .project-content .videoCard {
+        max-width: 50%;
     }
     #favicon {
         max-width: 100%;
+    }
+    #projects-page-1 {
+        visibility: visible!important
+    }
+    #projects-page-2 {
+        visibility: hidden;
     }
 }
 
@@ -48,6 +63,15 @@
     .project-row {
         flex-direction: column;
     }
+    .body-wrapper {
+        position: relative;
+        display: block;
+        height: auto;
+    }
+    .project-wrapper{
+        margin-top: 6rem;
+    }
+
     .project-content img,
     .project-content figure,
     .project-content .embedWrapper,

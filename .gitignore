@@ -1,7 +1,11 @@
-old/
-files/
-img/leo-all/
+.DS_Store
 *.ai
 *.psd
 *.xd
-.DS_Store
+*.mpeg
+old/
+files/*
+!files/
+!files/MarcusBlackstock.pdf
+img/leo-all/
+css/flickity.css

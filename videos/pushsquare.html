@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <style>@media (prefers-color-scheme: light){ body{visibility: hidden; opacity:0; background-color: white;}} @media (prefers-color-scheme: dark){ body{visibility: hidden; opacity:0; background-color: black;}}
+    </style>
+
+    <head>
+        <title>Marcus Blackstock / Push Square</title>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <div id="header"></div>
+        <script>
+        $(function () {
+            $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#footer").load("/footer.html");
+        });
+    </script>
+    </head>
+
+    <body>
+        <div id="nav-placeholder"></div>
+
+        <div class="body-wrapper">
+            <div class="project-wrapper">
+                <h1 class="black" id="headingVideo">Push Square</h1>
+                <script src="https://static.elfsight.com/platform/platform.js"
+                    data-use-service-core defer></script>
+                <div
+                    class="elfsight-app-46c035b5-5451-4e8f-9176-f03a7c69305a elfsight-app"></div>
+                <div class="project-row">
+                    <div class="project-content">
+                        <p>
+                            These are some of the most successful videos that I
+                            produced for
+                            <a href="https://www.pushsquare.com/">Push Square</a>.
+                            As a freelancer I created a variety of
+                            PlayStation-focussed video content including
+                            video features, guides, and even conducted in-person
+                            interviews/previews with developers at PAX West
+                            2019.
+                        </p>
+                    </div>
+                    <div class="project-content rightAlign">
+                        <p class="gray">
+                            <a
+                                href="https://www.youtube.com/playlist?list=PLCC30k2ff5sLwjsaa1reHR5LPR5tiabGQ">Full
+                                YouTube Playlist</a>
+                            <br>Oct 2018 - Oct 2019<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </body>
+
+</html>

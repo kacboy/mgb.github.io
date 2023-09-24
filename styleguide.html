@@ -1,145 +1,176 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <title>Marcus Blackstock / Styleguide</title>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <div id="header"></div>
-    <script>
+    <style>@media (prefers-color-scheme: light){ html{visibility: hidden; opacity:0; background-color: white;}} @media (prefers-color-scheme: dark){ html{visibility: hidden; opacity:0; background-color: black;}}
+    </style>
+    
+    <head>
+        <title>Marcus Blackstock / Styleguide</title>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <div id="header"></div>
+        <script>
         $(function () {
             $("#header").load("/header.html");
             $("#nav-placeholder").load("/nav.html");
+            $("#project-grid").load("/project-grid.html");
             $("#footer").load("/footer.html");
         });
     </script>
-</head>
+    </head>
 
-<body>
-    <div id="nav-placeholder"></div>
+    <body>
+        <div id="nav-placeholder"></div>
 
-    <div class="project-wrapper">
-        <div class="project-row">
-            <div class="project-content">
-                <h1 class="black">Styleguide</h1><br>
+        <div class="project-wrapper">
+            <div class="project-row">
+                <div class="project-content">
+                    <h1 class="black">Styleguide</h1><br>
 
-                <h3>Colours</h3><br>
+                    <h3>Colours</h3><br>
 
-                <div
-                    style="display: inline-block; width:18%; height:50px; border: 1px solid #77cc77; background-color:#77cc77; text-align: center;">
-                    <br>green
+                    <div
+                        style="display: inline-block; width:18%; height:50px; border: 1px solid #77cc77; background-color:#77cc77; text-align: center;">
+                        <br>green
+                    </div>
+                    <div
+                        style="display: inline-block; width:18%; height:50px; border: 1px solid var(--color-lightgray); background-color:#fff; text-align: center; color:#000;">
+                        <br>white
+                    </div>
+                    <div
+                        style="display: inline-block; width:18%; height:50px; border: 1px solid var(--color-lightgray); background-color:var(--color-lightgray); text-align: center; color:var(--color-black);">
+                        <br>lightgray
+                    </div>
+                    <div
+                        style="display: inline-block; width:18%; height:50px; border: 1px solid gray; background-color:gray; text-align: center;">
+                        <br>gray
+                    </div>
+                    <div
+                        style="display: inline-block; width:18%; height:50px; border: 1px solid black; background-color:#000; color:#fff; text-align: center;">
+                        <br>black
+                    </div>
+
+                    <p><br></p>
+                    <code>var(--color-lightgray)</code><br><br><br>
+                    <hr><br><br>
+
+                    <h3>Text Styles</h3><br>
+
+                    <p>Paragraph</p>
+                    <code>&lt;p&gt;Paragraph&lt;/p&gt;</code><br><br><br>
+
+                    <p class="gray">Caption, sidebar</p>
+                    <code>&lt;p class=&quot;gray rightAlign&quot;&gt;Caption,
+                        sidebar&lt;/p&gt;</code><br><br><br>
+
+                    <blockquote>Quote</blockquote>
+                    <code>&lt;blockquote&gt;Quote&lt;/blockquote&gt;</code><br><br><br>
+
+                    <code>Code</code><br>
+                    <code>&lt;code&gt;Code&lt;/code&gt;</code><br><br><br>
+
+                    <h1 class="black">Heading 1</h1>
+                    <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code><br><br><br>
+
+                    <h2 class="black">Heading 2</h2>
+                    <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code><br><br><br>
+
+                    <h3>Heading 3</h3>
+                    <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
+
+                    <br><br><br>
+                    <hr><br><br>
+
+                    <h3>Links</h3>
+                    <p><a href="#">Paragraph Link</a></p>
+                    <code>&lt;a href=&quot;#&quot;&gt;Paragraph Link&lt;/a&gt;</code><br><br><br>
+
+                    <h2><a href="#">H2 Link</a></h2>
+                    <code>&lt;h2&gt;&lt;a href=&quot;#&quot;&gt;H2
+                        Link&lt;/a&gt;&lt;/h2&gt;</code><br><br><br>
+
+                    <input type="search" placeholder="Input" value name="s"><input
+                        type="submit" value="Input">
+                    <br>
+                    <code>&lt;input type="search" placeholder="Input" value=""
+                        name="s"&gt;&lt;input type="submit" value="Input"&gt;</code><br><br>
+
+                    <div class="social">
+                        <a href="#"
+                            class="mdi mdi-linkedin-box mdi-24px"></a>
+                        <a href="#" class="mdi mdi-twitter mdi-24px"></a>
+                        <a href="#"
+                            class="mdi mdi-youtube mdi-24px"></a>
+                        <a href="#"
+                            class="mdi mdi-youtube-gaming mdi-24px"></a>
+                        <a href="#" class="mdi mdi-email mdi-24px"></a>
+                    </div>
+                    <code>
+                        &lt;div class=&quot;social&quot;&gt;<br>
+                        &lt;a href=&quot;#&quot; class=&quot;mdi
+                        mdi-linkedin-box mdi-24px&quot;&gt;&lt;/a&gt;<br>
+                        &lt;a href=&quot;#&quot; class=&quot;mdi mdi-twitter
+                        mdi-24px&quot;&gt;&lt;/a&gt;<br>
+                        &lt;a href=&quot;#&quot; class=&quot;mdi mdi-youtube
+                        mdi-24px&quot;&gt;&lt;/a&gt;<br>
+                        &lt;a href=&quot;#&quot; class=&quot;mdi
+                        mdi-youtube-gaming mdi-24px&quot;&gt;&lt;/a&gt;<br>
+                        &lt;a href=&quot;#&quot; class=&quot;mdi mdi-email
+                        mdi-24px&quot;&gt;&lt;/a&gt;<br>&lt;/div&gt;
+                    </code>
+
+                    <br><br><br>
+                    <hr><br><br>
+
+                    <h3>Content</h3><br>
+                    <video src="/vid/thumbs/truncate.webm" autoplay loop></video><br>
+                    <code>&lt;video src=&quot;#&quot; autoplay
+                        loop&gt;&lt;/video&gt;</code><br><br><br>
+
+                    <figure style="transform: unset; top:unset;">
+                        <img src="/img/pfp.jpg" alt="Sample">
+                        <figcaption>Sample image + caption</figcaption>
+                    </figure>
+                    <code>&lt;figure&gt;<br>&lt;img src=&quot;#&quot;
+                        alt=&quot;#&quot;&gt;<br>&lt;figcaption&gt;Sample image
+                        + caption&lt;/figcaption&gt;<br>&lt;/figure&gt;</code><br><br><br>
+
+                    <div id="project-grid"></div>
+                    <code>&lt;div id=&quot;project-grid&quot;&gt;&lt;/div&gt;</code>
+
+                    <!-- <div class="carousel" style="transform: unset; top: unset;"
+                        data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": false, "autoPlay": false}'>
+                        <div class="carousel-cell"><video
+                                src="/vid/thumbs/alana.mp4" autoplay loop></video></div>
+                        <div class="carousel-cell"><img
+                                src="/img/alana/phones.png" alt="Main Menu"></div>
+                        <div class="carousel-cell"><img
+                                src="/img/alana/slides.png" alt="Schedule"></div>
+                        <div class="carousel-cell"><img
+                                src="/img/alana/angle.png" alt="Schedule"></div>
+                    </div>
+                    <code>
+                        &lt;div class=&quot;carousel&quot;
+                        style=&quot;transform: unset; top: unset;&quot;
+                        data-flickity='{ &quot;imagesLoaded&quot;: true, &quot;percentPosition&quot;: false, &quot;wrapAround&quot;: false, &quot;autoPlay&quot;: false}'&gt;<br>
+                        &lt;div class=&quot;carousel-cell&quot;&gt;&lt;video
+                        src=&quot;img/alana.mp4&quot; autoplay
+                        loop&gt;&lt;/video&gt;&lt;/div&gt;<br>
+                        &lt;div class=&quot;carousel-cell&quot;&gt;&lt;img
+                        src=&quot;img/alana/phones.png&quot; alt=&quot;Main
+                        Menu&quot;&gt;&lt;/div&gt;<br>
+                        &lt;div class=&quot;carousel-cell&quot;&gt;&lt;img
+                        src=&quot;img/alana/slides.png&quot;
+                        alt=&quot;Schedule&quot;&gt;&lt;/div&gt;<br>
+                        &lt;div class=&quot;carousel-cell&quot;&gt;&lt;img
+                        src=&quot;img/alana/angle.png&quot;
+                        alt=&quot;Schedule&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;
+                    </code> -->
                 </div>
-                <div
-                    style="display: inline-block; width:18%; height:50px; border: 1px solid var(--color-lightgray); background-color:#fff; text-align: center; color:#000;">
-                    <br>white
+
+                <div class="project-content">
                 </div>
-                <div
-                    style="display: inline-block; width:18%; height:50px; border: 1px solid var(--color-lightgray); background-color:var(--color-lightgray); text-align: center; color:var(--color-black);">
-                    <br>lightgray
-                </div>
-                <div
-                    style="display: inline-block; width:18%; height:50px; border: 1px solid gray; background-color:gray; text-align: center;">
-                    <br>gray
-                </div>
-                <div
-                    style="display: inline-block; width:18%; height:50px; border: 1px solid black; background-color:#000; color:#fff; text-align: center;">
-                    <br>black
-                </div>
-
-                <p><br></p>
-                <code>var(--color-lightgray)</code><br><br><br>
-                <hr><br><br>
-
-                <h3>Text Styles</h3><br>
-
-                <p>Paragraph</p>
-                <code>&lt;p&gt;Paragraph&lt;/p&gt;</code><br><br><br>
-
-                <p class="gray">Caption, sidebar</p>
-                <code>&lt;p class=&quot;gray rightAlign&quot;&gt;Caption, sidebar&lt;/p&gt;</code><br><br><br>
-
-                <blockquote>Quote</blockquote>
-                <code>&lt;blockquote&gt;Quote&lt;/blockquote&gt;</code><br><br><br>
-
-                <code>Code</code><br>
-                <code>&lt;code&gt;Code&lt;/code&gt;</code><br><br><br>
-
-                <h1 class="black">Heading 1</h1>
-                <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code><br><br><br>
-
-                <h2 class="black">Heading 2</h2>
-                <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code><br><br><br>
-
-                <h3>Heading 3</h3>
-                <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
-
-                <br><br><br>
-                <hr><br><br>
-
-                <h3>Links</h3>
-                <p><a href="#">Paragraph Link</a></p>
-                <code>&lt;a href=&quot;#&quot;&gt;Paragraph Link&lt;/a&gt;</code><br><br><br>
-
-                <h2><a href="#">H2 Link</a></h2>
-                <code>&lt;h2&gt;&lt;a href=&quot;#&quot;&gt;H2 Link&lt;/a&gt;&lt;/h2&gt;</code><br><br><br>
-
-                <input type="search" placeholder="Input" value="" name="s"><input type="submit" value="Input">
-                <br>
-                <code>&lt;input type="search" placeholder="Input" value="" name="s"&gt;&lt;input type="submit" value="Input"&gt;</code><br><br>
-
-                <div class="social">
-                    <a href="#"
-                        class="mdi mdi-linkedin-box mdi-24px"></a>
-                    <a href="#" class="mdi mdi-twitter mdi-24px"></a>
-                    <a href="#"
-                        class="mdi mdi-youtube mdi-24px"></a>
-                    <a href="#"
-                        class="mdi mdi-youtube-gaming mdi-24px"></a>
-                    <a href="#" class="mdi mdi-email mdi-24px"></a>
-                </div>
-                <code>
-                    &lt;div class=&quot;social&quot;&gt;<br>
-                    &lt;a href=&quot;#&quot; class=&quot;mdi mdi-linkedin-box mdi-24px&quot;&gt;&lt;/a&gt;<br>
-                    &lt;a href=&quot;#&quot; class=&quot;mdi mdi-twitter mdi-24px&quot;&gt;&lt;/a&gt;<br>
-                    &lt;a href=&quot;#&quot; class=&quot;mdi mdi-youtube mdi-24px&quot;&gt;&lt;/a&gt;<br>
-                    &lt;a href=&quot;#&quot; class=&quot;mdi mdi-youtube-gaming mdi-24px&quot;&gt;&lt;/a&gt;<br>
-                    &lt;a href=&quot;#&quot; class=&quot;mdi mdi-email mdi-24px&quot;&gt;&lt;/a&gt;<br>&lt;/div&gt;
-                </code>
-
-                <br><br><br>
-                <hr><br><br>
-
-                <h3>Content</h3><br>
-                <video src="/vid/thumbs/sounds.mp4" autoplay loop></video><br>
-                <code>&lt;video src=&quot;#&quot; autoplay loop&gt;&lt;/video&gt;</code><br><br><br>
-
-                <figure style="transform: unset; top:unset;">
-                    <img src="/img/pfp.jpg" alt="Sample">
-                    <figcaption>Sample image + caption</figcaption>
-                </figure>
-                <code>&lt;figure&gt;<br>&lt;img src=&quot;#&quot; alt=&quot;#&quot;&gt;<br>&lt;figcaption&gt;Sample image + caption&lt;/figcaption&gt;<br>&lt;/figure&gt;</code><br><br><br>
-
-                <div class="carousel" style="transform: unset; top: unset;"
-                    data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": false, "autoPlay": false}'>
-                    <div class="carousel-cell"><video src="/vid/thumbs/alana.mp4" autoplay loop></video></div>
-                    <div class="carousel-cell"><img src="/img/alana/phones.png" alt="Main Menu"></div>
-                    <div class="carousel-cell"><img src="/img/alana/slides.png" alt="Schedule"></div>
-                    <div class="carousel-cell"><img src="/img/alana/angle.png" alt="Schedule"></div>
-                </div>
-                <code>
-          &lt;div class=&quot;carousel&quot; style=&quot;transform: unset; top: unset;&quot;
-          data-flickity='{ &quot;imagesLoaded&quot;: true, &quot;percentPosition&quot;: false, &quot;wrapAround&quot;: false, &quot;autoPlay&quot;: false}'&gt;<br>
-          &lt;div class=&quot;carousel-cell&quot;&gt;&lt;video src=&quot;img/alana.mp4&quot; autoplay loop&gt;&lt;/video&gt;&lt;/div&gt;<br>
-          &lt;div class=&quot;carousel-cell&quot;&gt;&lt;img src=&quot;img/alana/phones.png&quot; alt=&quot;Main Menu&quot;&gt;&lt;/div&gt;<br>
-          &lt;div class=&quot;carousel-cell&quot;&gt;&lt;img src=&quot;img/alana/slides.png&quot; alt=&quot;Schedule&quot;&gt;&lt;/div&gt;<br>
-          &lt;div class=&quot;carousel-cell&quot;&gt;&lt;img src=&quot;img/alana/angle.png&quot; alt=&quot;Schedule&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;
-        </code>
-            </div>
-
-            <div class="project-content">
             </div>
         </div>
-    </div>
-    <div id="footer"></div>
-</body>
+        <div id="footer"></div>
+    </body>
 
 </html>

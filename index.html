@@ -1,54 +1,44 @@
 <!doctype html>
 <html lang="en">
+    <style>@media (prefers-color-scheme: light){ body{visibility: hidden; opacity:0; background-color: white;}} @media (prefers-color-scheme: dark){ body{visibility: hidden; opacity:0; background-color: black;}}
+    </style>
 
-<head>
-    <title>Marcus Blackstock / Links</title>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <div id="header"></div>
-    <script>
+    <head>
+        <title>Marcus Blackstock</title>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <div id="header"></div>
+        <script>
         $(function () {
             $("#header").load("/header.html");
             $("#nav-placeholder").load("/nav.html");
+            $("#project-grid").load("/project-grid.html");
             $("#footer").load("/footer.html");
         });
     </script>
-</head>
+    </head>
 
-<body>
-    <div class="body-wrapper" id="about-wrapper">
-        <div class="body-content">
-            <h3><span class="white-bg"> Marcus Blackstock / Links</span></h3>
-            <div class="headingText">
-                <h2><a class="mdi mdi-linkedin" href="https://www.linkedin.com/in/marcus-blackstock-2108b3b4" style="padding: 0rem 0.5rem;"> LinkedIn</a></h2>
-            </div>
-            <div class="imgDiv designImgDiv" id="designImgLeo1"></div>
-            <br>
+    <body>
+        <div id="nav-placeholder"></div>
 
-            <div class="headingText">
-                <h2><a class="mdi mdi-youtube" href="https://www.youtube.com/@MarcusBlackstock/" style="padding: 0rem 0.5rem;"> YouTube</a></h2>
-            </div>
-            <div class="imgDiv designImgDiv" id="designImgLeo2"></div>
-            <br>
-            
-            <div class="headingText">
-                <h2><a class="mdi mdi-emoticon-poop" href="https://www.youtube.com/@kacboy/" style="padding: 0rem 0.5rem;"> kacboy</a></h2>
-            </div>
-            <div class="imgDiv designImgDiv" id="designImgLeo4"></div>
-            <br>
-
-            <div class="headingText">
-                <h2><a class="mdi mdi-email" href="mailto:me@marcusblackstock.com" style="padding: 0rem 0.5rem;">
-                        Email</a></h2>
-            </div>
-            <div class="imgDiv designImgDiv" id="designImgLeo5"></div>
-
-            <div class="social">
-                <a href="#" class="btn-toggle nav-item mdi mdi-24px mdi-brightness-6"
-                    title="Toggle dark/light mode"></a>
+        <div class="body-wrapper">
+            <div class="project-wrapper">
+                <div class="project-row">
+                    <div class="project-content noMargin">
+                        <h1 class="black">Hello! My name is Marcus and I'm a
+                            video
+                            content creator based in Vancouver, Canada. I'm
+                            currently
+                            working as a video editor
+                            at <a href="https://linusmediagroup.com/">Linus
+                                Media
+                                Group</a>.
+                        </h1>
+                        <h3>Feel free to take a look at some of my work:</h3>
+                    </div>
+                </div>
+                <div id="project-grid"></div>
             </div>
         </div>
-    </div>
-
-    <div id="footer"></div>
-</body>
+        <div id="footer"></div>
+    </body>
 </html>

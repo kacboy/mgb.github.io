@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <style>@media (prefers-color-scheme: light){ body{visibility: hidden; opacity:0; background-color: white;}} @media (prefers-color-scheme: dark){ body{visibility: hidden; opacity:0; background-color: black;}}
+    </style>
+
+    <head>
+        <title>Marcus Blackstock / Projects</title>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <div id="header"></div>
+        <script>
+        $(function () {
+            $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#project-grid").load("/project-grid-2.html");
+            $("#footer").load("/footer.html");
+        });
+    </script>
+    </head>
+
+    <body>
+        <div id="nav-placeholder"></div>
+
+        <div class="body-wrapper">
+            <div class="body-content">
+                <h3>Video Projects</h3>
+                <div id="projects-page-1" style="visibility: hidden; height: 0;">
+                    <div id="project-grid"></div>
+                </div>
+                <div id="projects-page-2">
+                    <div class="headingText">
+                        <h2><a href="videos/linustechtips.html">Linus Tech Tips</a></h2>
+                    </div>
+                    <div class="imgDiv indexImgDiv">
+                        <video src="vid/thumbs/linustechtips.webm" autoplay loop></video>
+                    </div>
+                    <br>
+                    <div class="headingText">
+                        <h2><a href="videos/kacboy.html">Kacboy</a></h2>
+                    </div>
+                    <div class="imgDiv indexImgDiv">
+                        <video src="vid/thumbs/kacboy.webm" autoplay loop></video>
+                    </div>
+                    <br>
+                    <div class="headingText">
+                        <h2><a href="videos/metaoptima.html">MetaOptima</a></h2>
+                    </div>
+                    <div class="imgDiv indexImgDiv">
+                        <video src="vid/thumbs/metaoptima.webm" autoplay loop></video>
+                    </div>
+                    <br>
+                    <div class="headingText">
+                        <h2><a href="videos/thepeak.html">The Peak</a></h2>
+                    </div>
+                    <div class="imgDiv indexImgDiv">
+                        <video src="vid/thumbs/thepeak.webm" autoplay loop></video>
+                    </div>
+                    <br>
+                    <div class="headingText">
+                        <h2><a href="videos/pushsquare.html">Push Square</a></h2>
+                    </div>
+                    <div class="imgDiv indexImgDiv">
+                        <video src="vid/thumbs/pushsquare.webm" autoplay loop></video>
+                    </div>
+                    <br>
+                    <div class="headingText">
+                        <h2><a href="videos/truncate.html">Short Film</a></h2>
+                    </div>
+                    <div class="imgDiv indexImgDiv">
+                        <video src="vid/thumbs/truncate.webm" autoplay loop></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </body>
+
+</html>

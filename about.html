@@ -1,50 +1,60 @@
 <!doctype html>
 <html lang="en">
+    <style>@media (prefers-color-scheme: light){ body{visibility: hidden; opacity:0; background-color: white;}} @media (prefers-color-scheme: dark){ body{visibility: hidden; opacity:0; background-color: black;}}
+    </style>
 
-<head>
-    <title>Marcus Blackstock / About</title>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <div id="header"></div>
-    <script>
+    <head>
+        <title>Marcus Blackstock / About</title>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <div id="header"></div>
+        <script>
         $(function () {
             $("#header").load("/header.html");
             $("#nav-placeholder").load("/nav.html");
             $("#footer").load("/footer.html");
         });
     </script>
-</head>
+    </head>
 
-<body>
-    <div id="nav-placeholder"></div>
+    <body>
+        <div id="nav-placeholder"></div>
 
-    <div class="body-wrapper" id="about-wrapper">
-        <div class="body-content">
-            <h3><span class="white-bg">About Me</span></h3>
-            <p><span class="white-bg">I’m Marcus Blackstock. I am a multidisciplinary designer from Vancouver, Canada. I
-                have industry experience in video production, visual design, and user experience. I've been
-                fortunate enough to study and work in fields I'm passionate about; technology,
-                video games, and digital media.</span></p>
-            <br>
-            <p><span class="white-bg">I'm currently working as a video editor at <a
-                        href="https://linusmediagroup.com/">Linus Media Group</a>.</span></p>
-            <br>
-             <p><span class="white-bg">Take a gander at my <a href="/files/MarcusBlackstock.pdf">resume</a> for more
-                    details!</span></p>
-            <div class="social">
-                <a href="https://twitter.com/kacboy" class="mdi mdi-twitter mdi-24px" title="Twitter"></a>
-                <a href="https://www.twitch.tv/kacboy" class="mdi mdi-twitch mdi-24px" title="Twitch"></a>
-                <a href="https://www.youtube.com/channel/UCKXq_PkhZfWKE91seN7-X5A" class="mdi mdi-youtube mdi-24px"
-                    title="YouTube"></a>
-                <a href="https://www.youtube.com/channel/UCNRTNlalcpFEfEXaJa8GMUA"
-                    class="mdi mdi-youtube-gaming mdi-24px" title="YouTube Gaming"></a>
-                <a href="https://www.linkedin.com/in/marcus-blackstock-2108b3b4" class="mdi mdi-linkedin mdi-24px"
-                    title="Linkedin"></a>
-                <a href="mailto:me@marcusblackstock.com" class="mdi mdi-email mdi-24px" title="Email"></a>
+        <div class="body-wrapper" id="about-wrapper">
+            <div class="body-content">
+                <h3><span class="white-bg">About Me</span></h3>
+                <p><span class="white-bg">I’m Marcus Blackstock. I am a video
+                        content creator based in Vancouver, Canada. I
+                        have industry experience in video production, social
+                        media, and visual design. My academic background
+                        is in user experience design and publishing. I'm most
+                        passionate about content creation in the fields of
+                        technology, video games, and digital media.</span></p>
+                <br>
+                <p><span class="white-bg">I'm currently working as a video
+                        editor at <a
+                            href="https://linusmediagroup.com/">Linus Media
+                            Group</a>.</span></p>
+                <br>
+                <p><span class="white-bg">Take a look at my <a
+                            href="/files/MarcusBlackstock.pdf">resume</a> for
+                        more
+                        details!</span></p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/mgblackstock/"
+                        class="mdi mdi-linkedin mdi-24px"
+                        title="Linkedin"></a>
+                    <a href="https://www.youtube.com/@MarcusBlackstock"
+                        class="mdi mdi-youtube mdi-24px"
+                        title="YouTube"></a>
+                    <a href="https://www.youtube.com/@kacboy"
+                        class="mdi mdi-emoticon-poop mdi-24px" title="@kacboy"></a>
+                    <a href="mailto:me@marcusblackstock.com"
+                        class="mdi mdi-email mdi-24px" title="Email"></a>
+                </div>
+                <div class="imgDiv" id="imgAbout"></div>
             </div>
-            <div class="imgDiv" id="imgAbout"></div>
         </div>
-    </div>
-    <div id="footer"></div>
-</body>
+        <div id="footer"></div>
+    </body>
 
 </html>

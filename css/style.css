@@ -9,18 +9,20 @@
 }
 
 body {
+  transition: .25s;
   --color-green: #77cc77;
   --color-white: white;
   --color-black: #0B0B0B;
   --color-gray: gray;
   --color-lightgray: lightgray;
   --color-h2gray: rgb(191, 191, 191);
-
   font-family: 'Karla', sans-serif;
   font-size: 1rem;
   margin: auto;
   background-color: var(--color-white);
   color: var(--color-black);
+  opacity: 1;
+  visibility: visible;
 }
 
 body.dark-theme {
@@ -96,16 +98,16 @@ html {
 
 
 /* HIGHLIGHT COLOR */
-
-
 /* https://css-tricks.com/overriding-the-default-text-selection-color-with-css/ */
 
 ::selection {
   background: var(--color-green);
+  color: white;
 }
 
 ::-moz-selection {
   background: var(--color-green);
+  color: white;
 }
 
 .white-bg {
@@ -131,7 +133,8 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover, .title a:hover {
+nav a:hover,
+.title a:hover {
   color: var(--color-green);
   /* background-color: var(--color-white); */
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, white 10%, white 90%, rgba(255, 255, 255, 0) 90%);
@@ -172,25 +175,31 @@ input {
 
   border-radius: 0;
 }
-input[type=search]::placeholder{
+
+input[type=search]::placeholder {
   color: var(--color-gray);
 }
+
 input[type=search] {
   color: var(--color-white);
   background-color: white;
   border: 1px solid var(--color-lightgray);
   padding: 0 0.5rem;
 }
-input[type=search]:active, input[type=search]:focus {
+
+input[type=search]:active,
+input[type=search]:focus {
   border: 1px solid var(--color-green);
 }
+
 input[type=submit] {
   color: var(--color-black);
   background-color: var(--color-lightgray);
   font-weight: bold;
-  border:none;
+  border: none;
   padding: 0 1rem;
 }
+
 input[type=submit]:hover {
   background-color: var(--color-green);
 }
@@ -228,10 +237,11 @@ a,
 a:link,
 a:visited,
 a:hover,
-a:active{
+a:active {
   text-decoration: none;
 }
-a:active{
+
+a:active {
   color: inherit;
 }
 
@@ -353,23 +363,7 @@ ul {
 }
 
 
-/* FLICKITY */
-
-.carousel {
-  background: var(--color-white);
-  overflow: hidden;
-}
-
-.carousel-cell {
-  width: 100%;
-  margin-right: 10px;
-  border-radius: 5px;
-}
-
-
 /* H2 HOVER STYLES */
-
-
 /* http://jsfiddle.net/3z8CN/ */
 
 .headingText {
@@ -468,15 +462,6 @@ figcaption {
   color: var(--color-gray);
 }
 
-.carousel img {
-  transform: translateY(0);
-}
-
-.carousel video {
-  width: 100%;
-  float: left;
-}
-
 .project-content .logo {
   position: unset;
   top: unset;
@@ -487,6 +472,55 @@ figure {
   margin: 0;
 }
 
+/* VIDEO CARDS PROJECT GRID ELFSIGHT*/
+.videoCard {
+  position: relative;
+  display: block;
+  margin: .25rem;
+}
+
+.videoCard img {
+  width: 100%;
+}
+
+.videoCard video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+
+}
+
+#projects-page-1 {
+  visibility: hidden;
+  height: 0;
+}
+
+.videoCard:hover video {
+  opacity: 1;
+}
+
+.videoCard a {
+  transition: .25s ease;
+}
+
+.elfsight-app {
+  z-index: 0;
+}
+
+.elfsight-app a:hover {
+  background: none;
+}
+
+.yottie-popup-video-content a:hover,
+.yottie-popup-video-meta-text a:hover {
+  transition: none;
+  text-decoration: none;
+}
 
 /* DESIGN PICTURES HOVER CAPTIONS */
 
@@ -505,21 +539,6 @@ figure {
   text-align: right;
 }
 
-.headingText:hover+#designImgFlymigos::after {
-  content: "Branding / Web Design";
-}
-.headingText:hover+#designImgAlana::after {
-  content: "UX Design / Prototyping";
-}
-.headingText:hover+#designImgEMUrgency::after {
-  content: "Game Design / Programming";
-}
-.headingText:hover+#designImgRL::after {
-  content: "UX Design / Programming";
-}
-.headingText:hover+#designImgWideshot::after {
-  content: "Branding / Print Publishing";
-}
 .headingText:hover+#designImgThumbs::after {
   content: "Visual Design / Branding";
 }
@@ -532,19 +551,21 @@ img {
 }
 
 .thumbnail {
-  max-width:calc(calc(100% - 3rem) / 4);
+  max-width: calc(calc(100% - 3rem) / 4);
   padding-right: 1rem;
   padding-bottom: 1rem;
-  
+
   display: inline-block;
   margin: 0;
 }
+
 .thumbnail img {
   transform: none;
   top: unset;
   vertical-align: middle;
   position: unset;
 }
+
 .thumbnail:nth-of-type(4n) {
   padding-right: 0rem;
   float: right;
@@ -553,44 +574,15 @@ img {
 .headingText:hover+#indexImgVideo,
 .headingText:hover+#indexImgMotion,
 .headingText:hover+#indexImgDesign,
-.headingText:hover+#videoImg {
+.headingText:hover+#videoImg,
+.headingText:hover+.imgDiv {
   opacity: 1;
 }
 
-.headingText:hover+#designImgFlymigos {
-  background-image: url("../img/thumbs/flymigos.png");
-}
-.headingText:hover+#designImgAlana {
-  background-image: url("../img/thumbs/alana.png");
-}
-.headingText:hover+#designImgEMUrgency {
-  background-image: url("../img/thumbs/emurgency.png");
-}
-.headingText:hover+#designImgRL {
-  background-image: url("../img/thumbs/rl.png");
-}
-.headingText:hover+#designImgWideshot {
-  background-image: url("../img/thumbs/wideshot.png");
-}
 .headingText:hover+#designImgThumbs {
   background-image: url("../img/thumbs/thumbs2.png");
 }
 
 .headingText:hover+#designImgLeo1 {
-  background-image: url("../img/leo/leo-1.gif");
-}
-.headingText:hover+#designImgLeo2 {
-  background-image: url("../img/leo/leo-2.gif");
-}
-.headingText:hover+#designImgLeo3 {
-  background-image: url("../img/leo/leo-3.gif");
-}
-.headingText:hover+#designImgLeo4 {
-  background-image: url("../img/leo/leo-4.gif");
-}
-.headingText:hover+#designImgLeo5 {
-  background-image: url("../img/leo/leo-5.gif");
-}
-.headingText:hover+#designImgLeo6 {
-  background-image: url("../img/leo/leo-6.gif");
+  background-image: url("../img/leo-all/frame_00_delay-0.01s.gif");
 }
