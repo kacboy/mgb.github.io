@@ -5,7 +5,7 @@ var url = "https://api.minetools.eu/ping/mc.marcusblackstock.com";
 $.getJSON(url, function (r) {
   //data is the JSON string
   if (r.error) {
-    $('#rest').html('Server Offline<br><p>Discord: <a href="https://discord.gg/5mztRFs">https://discord.gg/5mztRFs</a></p>');
+    $('#rest').html('<b>Server Offline</b><br><p>Discord: <a href="https://discord.gg/5mztRFs">https://discord.gg/5mztRFs</a></p>');
     return false;
   }
   var pl = '';
@@ -22,7 +22,7 @@ $.getJSON(url, function (r) {
   const versionNumber = r.version.name.split(" ", 2);
 
   // if (r.players.sample.length > 0) { pl = '<br>' + r.players.sample[0].name; }
-  $('#rest').html('SERVER ONLINE!<br>Message me to be whitelisted.<br>Bedrock players use port 19132.<br><br><p>Discord: <a href="https://discord.gg/5mztRFs">https://discord.gg/5mztRFs</a></p><br><b>MOTD:</b> ' + r.description.replace(/§(.+?)/gi, '') + '<br><b>Version:</b> ' + versionNumber[1] + '<br><br><b>Players Online:</b> ' + r.players.online + '/' + r.players.max + '<br><ul>' + pl + '</ul>');
+  $('#rest').html('<b>SERVER ONLINE!</b><br>Message me to be whitelisted.<br>Bedrock players use port 19132.<br><br><p>Discord: <a href="https://discord.gg/5mztRFs">https://discord.gg/5mztRFs</a></p><br><b>MOTD:</b> ' + r.description.replace(/§(.+?)/gi, '') + '<br><b>Version:</b> ' + versionNumber[1] + '<br><br><b>Players Online:</b> ' + r.players.online + '/' + r.players.max + '<br><ul>' + pl + '</ul>');
 
   $('#favicon').attr('src', r.favicon);
 
