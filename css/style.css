@@ -477,8 +477,8 @@ figure {
   margin: 0;
 }
 
-/* VIDEO CARDS PROJECT GRID ELFSIGHT*/
-/* .videoCard {
+
+.videoCard {
   position: relative;
   display: block;
   margin: .25rem;
@@ -499,7 +499,8 @@ figure {
   opacity: 0;
 
 }
-
+/* VIDEO CARDS PROJECT GRID ELFSIGHT*/
+/* 
 #projects-page-1 {
   visibility: hidden;
   height: 0;
