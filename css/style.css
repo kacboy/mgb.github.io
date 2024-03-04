@@ -8,6 +8,11 @@
   src: url('../fonts/geomanist-medium-webfont.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'materialdesignicons';
+  src: url('/fonts/materialdesignicons-webfont.woff2') format('woff2');
+}
+
 body {
   transition: .25s;
   --color-green: #77cc77;
@@ -473,7 +478,7 @@ figure {
 }
 
 /* VIDEO CARDS PROJECT GRID ELFSIGHT*/
-.videoCard {
+/* .videoCard {
   position: relative;
   display: block;
   margin: .25rem;
@@ -520,7 +525,111 @@ figure {
 .yottie-popup-video-meta-text a:hover {
   transition: none;
   text-decoration: none;
+} */
+
+/* VIDEO GALLERY */
+
+.video-container {
+width: 768px;
+margin: 0 auto;
 }
+
+.embed-container {
+position: relative;
+padding-bottom: 56.25%;
+height: 0;
+overflow: hidden;
+max-width: 100%;
+height: auto;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.video-player__playing {
+margin-bottom: 1.000em;
+}
+
+.video-player__thumbs {
+overflow: hidden;
+}
+
+.video-thumb {
+float: left;
+width: 23.5%;
+/* width: 18.4%; */
+position: relative;
+overflow: hidden;
+padding-bottom: 13%;
+/* padding-bottom: 10%; */
+margin-bottom: 0.375em;
+cursor: pointer;
+}
+
+.video-thumb:not(:last-child) {
+margin-right: 2%;
+}
+
+.video-thumb.active {
+cursor: default;
+}
+
+.video-thumb:before,
+.video-thumb:after {
+display: block;
+position: absolute;
+/* transition: all 250ms ease-out; */
+z-index: 1;
+}
+
+.video-thumb:before {
+content: "";
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(247, 148, 30, 0);
+}
+
+.video-thumb.active:before {
+background: #77cc77bf;
+}
+
+.video-thumb:not(.active):hover:before {
+background: rgba(255, 255, 255, 0.5);
+}
+
+.video-thumb:after {
+font-family: "materialdesignicons";
+content: "\0F040C";
+top: 50%;
+left: 50%;
+margin: -0.458em 0 0 -0.500em;
+color: rgba(255, 255, 255, 0);
+font-size: 3.000em;
+line-height: 1;
+}
+
+.video-thumb.active:after {
+color: rgba(255, 255, 255, 1);
+}
+
+.video-thumb img {
+position: absolute;
+top: 50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+left: 0;
+}
+
 
 /* DESIGN PICTURES HOVER CAPTIONS */
 
