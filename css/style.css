@@ -499,8 +499,7 @@ figure {
   opacity: 0;
 
 }
-/* VIDEO CARDS PROJECT GRID ELFSIGHT*/
-/* 
+
 #projects-page-1 {
   visibility: hidden;
   height: 0;
@@ -513,7 +512,8 @@ figure {
 .videoCard a {
   transition: .25s ease;
 }
-
+/* VIDEO CARDS PROJECT GRID ELFSIGHT*/
+/* 
 .elfsight-app {
   z-index: 0;
 }
