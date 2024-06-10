@@ -17,7 +17,7 @@ body {
   transition: .25s;
   --color-green: #77cc77;
   --color-white: white;
-  --color-black: #0B0B0B;
+  --color-black: black;
   --color-gray: gray;
   --color-lightgray: lightgray;
   --color-h2gray: rgb(191, 191, 191);
