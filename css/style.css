@@ -32,7 +32,7 @@ body {
 
 body.dark-theme {
   --color-white: black;
-  --color-black: #FAFAFA;
+  --color-black: white;
   --color-lightgray: #404040;
   --color-h2gray: rgb(44, 44, 44);
 }
@@ -513,7 +513,7 @@ figure {
   transition: .25s ease;
 }
 /* VIDEO CARDS PROJECT GRID ELFSIGHT*/
-/* 
+
 .elfsight-app {
   z-index: 0;
 }
@@ -526,7 +526,11 @@ figure {
 .yottie-popup-video-meta-text a:hover {
   transition: none;
   text-decoration: none;
-} */
+}
+
+.yottie-widget-inner a {
+  /* display: none; */
+}
 
 /* VIDEO GALLERY */
 
