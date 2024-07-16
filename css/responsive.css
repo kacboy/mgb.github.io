@@ -174,6 +174,10 @@
     .video-thumb:after, .video-thumb:not(.active):hover:after {
         font-size: 2rem;
     }
+
+    .project-row .videoCard:not(:last-child) {
+        margin-right: unset;
+    }
 }
 
 
