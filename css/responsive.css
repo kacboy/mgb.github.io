@@ -2,85 +2,103 @@
     .body-wrapper {
         margin: 0 1rem;
     }
+
     .project-wrapper {
         margin: 6rem 1rem 6rem 1rem;
     }
-    .body-wrapper .project-wrapper{
+
+    .body-wrapper .project-wrapper {
         margin: 6rem 0rem 6rem 0rem;
     }
+
     nav {
         padding: 1rem;
     }
+
     .nav-links {
         margin-right: 2rem;
     }
+
     .imgDiv {
         background-size: calc(calc(100vw / 2) - 1rem);
         width: calc(100vw - 2rem);
         /* height: 281px; */
     }
+
     .designImgDiv {
         height: calc(100vw / 2);
     }
+
     .indexImgDiv {
         height: calc(100vw / 4);
         transform: translateY(-20%);
     }
+
     .headingText:hover+.imgDiv::before,
     .headingText:hover+.imgDiv::after {
         right: 0;
     }
 
-    .yottie-widget-video:nth-child(4n){
-    margin-right: .5rem !important;
+    .yottie-widget-video:nth-child(4n) {
+        margin-right: unset;
     }
+
     .yottie-widget-video {
-    width: calc(25% - .5rem) !important;
+        width: calc(25% - .5rem) !important;
     }
 
     .yottie-widget-video-preview-thumbnail {
         width: auto !important;
-      }
+    }
 }
 
 @media (max-width: 800px) {
+
     /* .project-content:nth-child(2) {
         max-width: 40%;
     } */
     .project-content .rightAlign {
         max-width: 40%;
     }
+
     #favicon {
         max-width: 100%;
     }
-    .imgThumb p{
+
+    .imgThumb p {
         opacity: 0;
     }
-      .yottie-widget-video:nth-child(4n){
+
+    .yottie-widget-video:nth-child(4n) {
         margin-right: .25rem !important;
-      }
-      .yottie-widget-video{
-        margin: .25rem ;
+    }
+
+    .yottie-widget-video {
+        margin: .25rem;
         width: calc(33% - .5rem) !important;
-        }
+    }
 }
 
 @media (max-width: 600px) {
     .project-content:nth-child(2) {
         max-width: 100%;
     }
+
     .project-content {
         margin: 1rem 0 0 0;
     }
+
     .project-row {
         flex-direction: column;
     }
+
     .body-wrapper {
         position: relative;
         display: block;
         height: auto;
     }
-    .project-wrapper{
+
+    .project-wrapper {
         margin-top: 6rem;
     }
 
@@ -92,9 +110,11 @@
         top: unset;
         transform: translateY(0);
     }
+
     .details {
         max-height: unset;
     }
+
     .noMargin {
         margin: 0;
     }
@@ -102,6 +122,7 @@
     .indexThumb, .imgThumb, .videoThumb {
         transform: translateY(-25%);
     }
+
     #imgAbout {
         position: unset;
         top: unset;
@@ -111,37 +132,48 @@
         margin-top: 1rem;
         width: 100%;
     }
+
     #about-wrapper {
         position: relative;
         display: block;
         height: auto;
     }
+
     .headingText:hover+.imgDiv::before,
     .headingText:hover+.imgDiv::after {
         display: none;
     }
+
     p,
     .body-content p {
         max-width: 100%;
     }
+
     h2,
     h2 a {
         font-size: 2.5rem;
     }
+
     H4 {
         font-size: 1.5rem;
     }
+
     hr {
         margin-top: 1rem;
     }
+
     .rightAlign {
         text-align: left;
     }
 
-    .yottie-widget-video{
-        margin: .25rem ;
+    .yottie-widget-video {
+        margin: .25rem;
         width: calc(50% - .5rem) !important;
-        }
+    }
+
+    .video-thumb:after, .video-thumb:not(.active):hover:after {
+        font-size: 2rem;
+    }
 }
 
 
@@ -155,17 +187,21 @@
         left: 1rem;
         opacity: 0;
     }
+
     .title:before {
         content: "MB";
         color: white;
     }
+
     .title a:hover {
         background-color: transparent;
         background: none;
     }
+
     .nav-links .btn-toggle {
         display: none;
     }
+
     h2,
     h2 a {
         font-size: 2rem;
@@ -181,12 +217,14 @@
         height: auto;
     }
 }
+
 @media (max-height: 850px) {
     .body-wrapper {
         position: relative;
         display: block;
         height: auto;
     }
+
     #imgAbout {
         top: 19rem;
     }
@@ -205,6 +243,7 @@
         --color-lightgray: #404040;
         --color-h2gray: rgb(44, 44, 44);
     }
+
     body.light-theme {
         --color-white: white;
         --color-black: #0B0B0B;
