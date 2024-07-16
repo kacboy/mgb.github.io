@@ -30,6 +30,17 @@
     .headingText:hover+.imgDiv::after {
         right: 0;
     }
+
+    .yottie-widget-video:nth-child(4n){
+    margin-right: .5rem !important;
+    }
+    .yottie-widget-video {
+    width: calc(25% - .5rem) !important;
+    }
+
+    .yottie-widget-video-preview-thumbnail {
+        width: auto !important;
+      }
 }
 
 @media (max-width: 800px) {
@@ -39,18 +50,19 @@
     .project-content .rightAlign {
         max-width: 40%;
     }
-    .project-content .videoCard {
-        max-width: 50%;
-    }
     #favicon {
         max-width: 100%;
     }
-    #projects-page-1 {
-        visibility: visible!important
+    .imgThumb p{
+        opacity: 0;
     }
-    #projects-page-2 {
-        visibility: hidden;
-    }
+      .yottie-widget-video:nth-child(4n){
+        margin-right: .25rem !important;
+      }
+      .yottie-widget-video{
+        margin: .25rem ;
+        width: calc(33% - .5rem) !important;
+        }
 }
 
 @media (max-width: 600px) {
@@ -86,11 +98,9 @@
     .noMargin {
         margin: 0;
     }
-    .imgDiv {
-        /* opacity: 0.5; */
-    }
-    .indexImgDiv {
-        transform: translateY(35%);
+
+    .indexThumb, .imgThumb, .videoThumb {
+        transform: translateY(-25%);
     }
     #imgAbout {
         position: unset;
@@ -99,6 +109,7 @@
         background-size: 100%;
         opacity: 100;
         margin-top: 1rem;
+        width: 100%;
     }
     #about-wrapper {
         position: relative;
@@ -126,6 +137,11 @@
     .rightAlign {
         text-align: left;
     }
+
+    .yottie-widget-video{
+        margin: .25rem ;
+        width: calc(50% - .5rem) !important;
+        }
 }
 
 
@@ -134,6 +150,7 @@
 @media (max-width: 470px) {
     .title span {
         position: absolute;
+        transform: translateX(-5rem);
         top: 1rem;
         left: 1rem;
         opacity: 0;
@@ -142,8 +159,16 @@
         content: "MB";
         color: white;
     }
+    .title a:hover {
+        background-color: transparent;
+        background: none;
+    }
     .nav-links .btn-toggle {
         display: none;
+    }
+    h2,
+    h2 a {
+        font-size: 2rem;
     }
 }
 
