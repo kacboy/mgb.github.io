@@ -545,7 +545,9 @@ figure {
 /* ELFSIGHT VIDEO GALLERY */
 
 .elfsight-app {
+  position: relative;
   z-index: 0;
+
 }
 
 .yottie-widget-video-info {
