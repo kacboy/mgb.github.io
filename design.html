@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <style>@media (prefers-color-scheme: light){ body{visibility: hidden; opacity:0; background-color: white;}} @media (prefers-color-scheme: dark){ body{visibility: hidden; opacity:0; background-color: black;}}
+    </style>
+
+<head>
+    <title>Marcus Blackstock / Design</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="header"></div>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#footer").load("/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <div class="body-wrapper">
+        <div class="body-content" style="width: 100%;">
+            <h3 class="mdi mdi-pencil-ruler"> Design Projects</h3>
+
+            <div class="headingText">
+                <h2><a href="designs/wideshot.html">Wideshot</a></h2>
+            </div>
+            <div class="imgThumb">
+                <img src="img/thumbs/wideshot.png">
+                <p class="gray">Branding / Print Publishing</p>
+            </div>
+            <br>
+
+            <div class="headingText">
+                <h2><a href="designs/rltracker.html">RL Match Tracker</a></h2>
+            </div>
+            <div class="imgThumb">
+                <img src="img/thumbs/rl.png">
+                <p class="gray">UX Design / Programming</p>
+            </div>
+            <br>
+
+            <div class="headingText">
+                <h2><a href="designs/flymigos.html">Flymigos</a></h2>
+            </div>
+            <div class="imgThumb">
+                <img src="img/thumbs/flymigos.png">
+                <p class="gray">Branding / Web Design</p>
+            </div>
+            <br>
+
+            <div class="headingText">
+                <h2><a href="designs/alana.html">Alana</a></h2>
+            </div>
+            <div class="imgThumb">
+                <img src="img/thumbs/alana.png">
+                <p class="gray">UX Design / Prototyping</p>
+            </div>
+            <br>
+
+            <div class="headingText">
+                <h2><a href="designs/emurgency.html">EMUrgency</a></h2>
+            </div>
+            <div class="imgThumb">
+                <img src="img/thumbs/emurgency.png">
+                <p class="gray">Game Design / Programming</p>
+            </div>
+            <br>
+
+            <div class="headingText">
+                <h2><a href="designs/thumbnails.html">Thumbnails</a></h2>
+            </div>
+            <div class="imgThumb">
+                <img src="img/thumbs/thumbs2.png">
+                <p class="gray">Visual Design / Branding</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>

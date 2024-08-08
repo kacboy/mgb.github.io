@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <style>@media (prefers-color-scheme: light){ body{visibility: hidden; opacity:0; background-color: white;}} @media (prefers-color-scheme: dark){ body{visibility: hidden; opacity:0; background-color: black;}}
+    </style>
+
+    <head>
+        <title>Marcus Blackstock / Wideshot</title>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <div id="header"></div>
+        <script>
+        $(function () {
+            $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#footer").load("/footer.html");
+        });
+    </script>
+    </head>
+
+    <body>
+        <div id="nav-placeholder"></div>
+
+        <div class="body-wrapper">
+            <div class="project-wrapper">
+                <div class="project-content">
+                    <h2 class="black" id="headingDesign">Wideshot</h2>
+                    <!-- <img src="../img/emurgency/logo.png" class="logo"> -->
+                    <h3 style="color: #f92d3b;">Magazine Design Concept</h3>
+                </div>
+                <div class="project-row">
+                    <div class="project-content noMargin">
+                        <div class="carousel"
+                            data-flickity='{"imagesLoaded": true, "percentPosition": false, "wrapAround": true, "autoPlay": false}'>
+                            <div class="carousel-cell"><img
+                                    src="../img/wideshot/1.png"></div>
+                            <div class="carousel-cell"><img
+                                    src="../img/wideshot/3.png"></div>
+                            <div class="carousel-cell"><img
+                                    src="../img/wideshot/4.png"></div>
+                            <div class="carousel-cell"><img
+                                    src="../img/wideshot/2.png"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-row">
+                    <div class="project-content">
+                        <p>Magazine brand and layout design for a senior publishing university course. Everything from the dimensions of the pages to the sections of the table of contents were chosen to reflect the filmmaking and cinematography-related subject matter of the publication. </p>
+                    </div>
+                    <div class="project-content rightAlign">
+                        <p class="gray">
+                            <a
+                                href="https://www.iat202.com/portfolio_page/truncate/">View full PDF</a><br>
+                            Jul 2020
+                            <br><br><span class="normal">Tools:</span>
+                            <br>InDesign, Photoshop
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </body>
+
+</html>

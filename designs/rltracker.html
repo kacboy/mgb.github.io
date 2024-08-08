@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Marcus Blackstock / RL Match Tracker</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="header"></div>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#footer").load("/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <div class="project-wrapper">
+        <div class="project-row">
+            <div class="project-content">
+                <h2 class="black" id="headingDesign">RL&nbsp;Match&nbsp;Tracker</h2>
+                <!-- <img src="../img/emurgency/logo.png" class="logo"> -->
+                <h3 style="color: #0C88FC;">Android App / UX Design Project</h3>
+                <p><a href="https://play.google.com/store/apps/details?id=com.rlmatchtracker.interface2">Google Play</a>
+                    / <a href="https://github.com/kacboy/RL-MatchTracker">GitHub</a></p><br>
+            </div>
+            <div class="project-content details">
+                <p class="gray rightAlign">
+                    <span style="font-weight: bold;">DATE</span><br> Fall 2019<br><br>
+                    <span style="font-weight: bold;">TEAM</span><br> Marcus Blackstock<br> Seongchang Yoo<br><br>
+                    <span style="font-weight: bold;">ROLE</span><br>
+                    <span class="white-bg">Programming</span><br>
+                    <span class="white-bg">UX Design</span><br>
+                    <span class="white-bg">Prototyping</span><br><br>
+                    <!-- <span style="font-weight: bold;">TOOLS</span><br> -->
+                </p>
+            </div>
+        </div>
+        <div class="embedWrapper" style="z-index: -1;">
+            <img src="../img/rltracker/banner.png" style="width: 100%;" alt="banner">
+        </div>
+        <div class="project-row">
+            <div class="project-content">
+                <br>
+                <h3 style="color: #0C88FC;">Summary</h3>
+                <p>
+                    <span style="font-weight: bold;">RL Match Tracker is a fully developed Android app that provides
+                        players with
+                        game-to-game data tracking for the competitive multiplayer car-soccer videogame, Rocket
+                        League.</span> Data is collected to showcase the players average abilities to highlight where
+                    the player can improve. My project partner
+                    and I thought that this was an untapped market for data tracking for Rocket League players, because
+                    existing popular websites like <a href="https://rocketleague.tracker.network/">Tracker Network</a>
+                    only showcase the players lifetime
+                    career data, with no way to see specific match data.
+                </p><br>
+                <p>
+                    This application was developed over the course of the Fall 2019 semester for an android app
+                    development course. My partner and I both programmed the application using Android Studio, but I
+                    mostly focussed on the UX and visual development, while he focussed
+                    on the back-end. The goal of the project was to create an Android application that uses an SQL
+                    database. I did some additional polishing and published the app to <a
+                        href="https://play.google.com/store/apps/details?id=com.rlmatchtracker.interface2">Google
+                        Play</a> on May 6th, 2020.
+                </p><br>
+            </div>
+            <div class="project-content">
+                <div class="embedWrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OArml5R_skY" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-row">
+            <div class="project-content">
+                <h3 style="color: #0C88FC;">Features</h3>
+                <p>
+                    The most advanced capability of the app is auto mode, which allows you to put your phone down during
+                    gameplay. Then when you pick up your phone (ideally at the end of a match), the camera will activate
+                    and you can take a picture of the final scoreboard.
+                    This scoreboard will be saved for manual input when the user is free to do so. Referencing from your
+                    scoreboard pictures, or with manual input, the app will save all inputted Rocket League match data
+                    including the gamemode, score,
+                    and your personal performance stats for each match. The app will present you with some graphs and
+                    data such as your average score for each game.
+                </p><br>
+                <p>
+                    The app also has some more fun features such as themes, which can be changed between blue or orange,
+                    according to the team colours of Rocket League! There is also the ability to put in your Rocket
+                    League account which will let the user easily view their
+                    stats on <a href="https://rocketleague.tracker.network/">Tracker
+                        Network</a>, for a broader view of their Rocket League career stats.
+                </p><br>
+            </div>
+            <div class="project-content">
+                <figure>
+                    <img src="../img/rltracker/auto.jpg" alt="Auto mode">
+                    <figcaption>Auto mode screen</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="project-row">
+            <div class="project-content">
+                <h3 style="color: #0C88FC;">Challenges</h3>
+                <p>
+                    For my project partner and I, it was our first time programming with Android Studio so there were
+                    obviously many hurdles early on in the course. Beyond that, there was a lot of difficulties with the
+                    SQL database, such as filter/sorting not working properly
+                    because one of our data fields had dashes in it, this would cause conflicts when the sequential
+                    search tried to go through the database. Another big challenge was that we wanted to save scoreboard
+                    images in the same database as the
+                    inputted match data, this led to challenges with compression and image-to-text conversion. We
+                    figured these things out with a lot of Stack Overflow trial and error, and occasional help from our
+                    our peers.
+                </p><br><br>
+                <h3 style="color: #0C88FC;">Conclusion</h3>
+                <p>
+                    There were a few more features (dark mode, customizable charts, more sorting options) I wanted to
+                    implement into the application to make it more useful, but each one would probably take me several
+                    hours. I'm really proud of what we managed to pull of
+                    with this app, and despite the challenges we faced along the way, we received 100% on the final
+                    presentation. Having a project with a core theme that you are actually interested in is a great
+                    motivator to create something great. I
+                    spent many late nights fixing some very minor bugs that were driving me nuts just because I wanted
+                    the application to be capable of what we pitched and it was something I could see myself using.
+                    Lastly, a huge thing I wish we put more
+                    effort into was figuring how to use Git so collaborating on our codebase would have been easier. We
+                    were fortunate in that we didn't have any major issues just zipping up our code for each other.
+                </p><br>
+            </div>
+            <div class="project-content">
+                <figure>
+                    <img src="../img/rltracker/mockups.png" alt="Mockups">
+                    <figcaption>Initial layout mockups for each screen</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>
