@@ -636,15 +636,31 @@ figure {
 .video-thumb {
   float: left;
   width: 100%;
-  /* width: 18.4%; */
   display: block;
   position: relative;
   overflow: hidden;
-  padding-bottom: 13%;
-  /* padding-bottom: 10%; */
+  /* padding-bottom: 13%; */
   margin-bottom: 0.375em;
   cursor: pointer;
   border-radius: 0.25rem;
+}
+
+.video-thumb:nth-last-child(-n+3):first-child,
+.video-thumb:nth-last-child(-n+3):first-child ~ li {
+  /* thumbnail height for 3 or Less */
+  padding-bottom: 18%;
+}
+
+.video-thumb:nth-last-child(4):first-child,
+.video-thumb:nth-last-child(4):first-child ~ li {
+  /* thumbnail height for 4 */
+  padding-bottom: 13.5%;
+}
+
+.video-thumb:nth-last-child(n+5),
+.video-thumb:nth-last-child(n+5) ~ li {
+  /* thumbnail height for 5 or More */
+  padding-bottom: 10.5%;
 }
 
 .video-thumb:not(:last-child) {

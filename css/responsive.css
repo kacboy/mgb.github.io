@@ -107,8 +107,10 @@
     .project-content .embedWrapper,
     .project-content .carousel {
         /* position: unset; */
-        top: unset;
-        transform: translateY(0);
+        
+        /* these were breaking video thumb seletors: */
+        /* top: unset; */
+        /* transform: translateY(0); */
     }
 
     .details {
