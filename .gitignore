@@ -5,6 +5,5 @@
 *.mpeg
 old/
 files/*
-!files/
-!files/MarcusBlackstock.pdf
+!files/*.pdf
 img/leo-all/
