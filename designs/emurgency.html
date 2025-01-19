@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="en">
+    <style>@media (prefers-color-scheme: light){ body{visibility: hidden; opacity:0; background-color: white;}} @media (prefers-color-scheme: dark){ body{visibility: hidden; opacity:0; background-color: black;}}
+    </style>
 
 <head>
     <title>Marcus Blackstock / EMUrgency</title>
@@ -17,128 +19,38 @@
 <body>
     <div id="nav-placeholder"></div>
 
-    <div class="project-wrapper">
-        <div class="project-row">
+    <div class="body-wrapper">
+        <div class="project-wrapper">
             <div class="project-content">
                 <h2 class="black" id="headingDesign">EMUrgency</h2>
-                <!-- <img src="../img/emurgency/logo.png" class="logo"> -->
-                <h3 style="color: #CCCC3D;">Game Design Project</h3>
-                <p><a href="https://play.google.com/store/apps/details?id=processing.test.emurgency">Google Play</a> /
-                    <a href="https://github.com/kacboy/EMUrgency">GitHub</a></p><br>
+                <h3 style="color: #CCCC3D;">Android Game</h3>
             </div>
-            <div class="project-content details">
-                <p class="gray rightAlign">
-                    <span style="font-weight: bold;">DATE</span><br> Summer 2016-Spring 2017<br><br>
-                    <!-- <span style="font-weight: bold;">TEAM</span><br> -->
-                    <span style="font-weight: bold;">ROLE</span>
-                    <br>Programming
-                    <br>Prototyping
-                    <br>Graphic Design<br><br>
-                    <!-- <span style="font-weight: bold;">TOOLS</span><br> -->
-                </p>
-            </div>
-        </div>
-        <div class="embedWrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/jOJdJ66Ew68" frameborder="0"
-                allowfullscreen></iframe>
-        </div>
-        <div class="project-row">
-            <div class="project-content">
-                <br>
-                <h3 style="color: #CCCC3D;">Summary</h3>
-                <p>
-                    EMUrgency (Extravehicular Mobility Unit routine gone extremely not cool yo) is a space-themed
-                    Android game I developed in my spare time over several months starting in late August 2016. I was
-                    expanding upon skills developed in my university courses such as Animated
-                    Intro to Programming and Digital Games. I had been slowly developing it and I published <a
-                        href="https://play.google.com/store/apps/details?id=processing.test.emurgency&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">v1.0
-                        on Google Play</a> on February 2nd, 2017.
-                </p><br><br>
-                <h3 style="color: #CCCC3D;">Development</h3>
-                <p>
-                    EMUrgency was created entirely with Processing 3’s Android development mode. When I started the
-                    project I already had several courses worth of experience creating various applications
-                    <!-- (including the <a href="/pillbox">Pillbox project</a>)  -->
-                    and games with Processing and I was interested in applying that knowledge to the mobile platform.
-                </p><br>
-                <p>
-                    The UI system I implemented for the EMUrgency's menus uses <a
-                        href="http://web.media.mit.edu/~cassiano/projects/cards_ui/index">Cards_UI by Lucas
-                        Cassiano from MIT</a>.
-                </p><br>
-            </div>
-            <div class="project-content">
-                <figure>
-                    <img src="../img/emurgency/scan.jpg" alt="Character Sketches">
-                    <figcaption>Final sketches of the player</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div class="project-row">
-            <div class="project-content">
-                <h3 style="color: #CCCC3D;">Gameplay</h3>
-                <p>
-                    The gameplay of EMUrgency most closely resembles endless runner type games in it’s procedural
-                    nature. However, the gameplay was result of my approach to creating a Processing game for
-                    Android, from the controls perspective. The most popular mobile
-                    games commonly use very minimal input while also giving the player freedom to control the game by
-                    touching anywhere on the screen instead of using virtual buttons.
-                </p><br>
-                <p>
-                    I took this idea to create a character that moves towards the player touching anywhere on the
-                    screen, and I found that removing any properties of constant friction and de-acceleration was
-                    similar to a zero-gravity situation. Running with this idea I decided
-                    to continue development with the space-theme seen in the published project.
-                </p><br>
-            </div>
-            <div class="project-content">
-                <figure>
-                    <img src="../img/emurgency/screens.png" alt="Sprites1">
-                    <figcaption>Graphical iterations of EMUrgency</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div class="project-row">
-            <div class="project-content">
-                <h3 style="color: #CCCC3D;">Visuals</h3>
-                <p>
-                    I decided to use an 8-bit style so I could easily create cohesive visuals across the gameplay and
-                    menu systems. I found a great <a id="emuBlue"
-                        href="http://opengameart.org/content/scaled-objects-in-solar-system-pixel-art">8-bit earth
-                        render by Michael
-                        J. Pierce</a> to use in the background, which really livened up the game's background and (lack
-                    of) atmosphere. The particle effects and starry background are generated in Processing with code,
-                    but the rest of the graphics were made by hand
-                    with photoshop.
-                </p><br>
-            </div>
-            <div class="project-content">
-                <figure>
-                    <img src="../img/emurgency/sprites1.png" alt="Sprites1">
-                    <img src="../img/emurgency/sprites2.png" alt="Sprites2">
-                    <figcaption>In-game sprites</figcaption>
-                </figure>
+            <div class="project-row">
+                <div class="project-content noMargin">
+                    <div class="carousel"
+                        data-flickity='{"imagesLoaded": true, "percentPosition": false, "wrapAround": true, "autoPlay": false}'>
+                        <div class="carousel-cell"><video src="../vid/emurgency.webm" autoplay loop></div>
+                        <div class="carousel-cell"><img src="../img/emurgency/scan.jpg"></div>
+                        <div class="carousel-cell"><img src="../img/emurgency/sprites.jpg"></div>
+                        <div class="carousel-cell"><img src="../img/emurgency/screens.png"></div>
+                        <div class="carousel-cell"><img src="../img/emurgency/banner.png"></div>
+                    </div>
+                </div>
             </div>
 
-        </div>
-        <div class="project-row">
-            <div class="project-content">
-                <h3 style="color: #CCCC3D;">Conclusion</h3>
-                <p>
-                    Creating EMUrgency has given me an even more in depth look at what it takes to develop a game in
-                    comparison to any of the games I had made previously. Because EMUrgency is available on many
-                    different devices, I had to develop the game to adjust accordingly
-                    to various screen sizes, and work with the constraints of Android apps.
-                </p><br>
-                <p>
-                    And there is still so much work that can be done, as the game still lacks music, sound effects, and
-                    many other features I wanted to implement to create a more captivating experience.
-                </p><br>
-                <!-- <p class="gray">
-          Google Play and the Google Play logo are trademarks of Google Inc.
-        </p> -->
-            </div>
-            <div class="project-content">
+            <div class="project-row">
+                <div class="project-content">
+                    <p>EMUrgency is a space-themed Android game I developed using Processing 3’s Android mode. It's minimal touch controls and a zero-gravity mechanics were inspired by the endless runner genre. The game features procedural gameplay, a high-score system, and 8-bit style visuals created in Photoshop and through code-generated effects. Developing EMUrgency provided valuable experience in adapting games for mobile platforms, though future improvements like functional sound effects, music, and additional features were never implemented. It was available publicly on the Play Store for a time, but I didn't maintain the app to keep up with Google's developer policy updates.</p>
+                </div>
+                <div class="project-content rightAlign">
+                    <p class="gray">
+                        <!-- <a href="https://play.google.com/store/apps/details?id=processing.test.emurgency">Google Play</a> -->
+                        <a href="https://github.com/kacboy/EMUrgency">GitHub</a><br>
+                        <!-- <br>Aug 2016 - Feb 2017<br> -->
+                        <br><span class="normal">Tools:</span>
+                        <br>Processing for Android,<br>Photoshop, Google Play Console
+                    </p>
+                </div>
             </div>
         </div>
     </div>

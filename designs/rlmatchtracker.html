@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Marcus Blackstock / RL Match Tracker</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="header"></div>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#footer").load("/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <div class="body-wrapper">
+        <div class="project-wrapper">
+            <div class="project-content">
+                <h2 class="black" id="headingDesign">RL Match Tracker</h2>
+                <h3 style="color: #FC7C0C;">Android App</h3>
+            </div>
+            <div class="project-row">
+                <div class="project-content noMargin">
+                    <div class="carousel"
+                        data-flickity='{"imagesLoaded": true, "percentPosition": false, "wrapAround": true, "autoPlay": false}'>
+                        <div class="carousel-cell"><video src="../vid/rlmatchtracker.webm" autoplay></div>
+                        <div class="carousel-cell"><img src="../img/rlmatchtracker/logo.png"></div>
+                        <div class="carousel-cell"><img src="../img/rlmatchtracker/banner.png"></div>
+                        <div class="carousel-cell"><img src="../img/rlmatchtracker/auto.png"></div>
+                        <div class="carousel-cell"><img src="../img/rlmatchtracker/mockups.png"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-row">
+                <div class="project-content">
+                    <p>RL Match Tracker is an Android app developed with a partner to provide Rocket League players with game-to-game data tracking, addressing the gap left by platforms like Tracker Network that only show lifetime stats. Created using Android Studio and an SQL database, the app includes features like automated photo-based match data input, performance graphs, and customizable themes. It was available publicly on the Play Store for a time, but I didn't maintain the app to keep up with Google's developer policy updates.</p>
+                </div>
+                <div class="project-content rightAlign">
+                    <p class="gray">
+                        <!-- <a href="https://play.google.com/store/apps/details?id=com.rlmatchtracker.interface2">Google Play</a> -->
+                        <a href="https://github.com/kacboy/RL-MatchTracker">GitHub</a><br>
+                        <!-- Sep 2019 - May 2020<br> -->
+                        <br><span class="normal">Tools:</span>
+                        <br>Android Studio, Adobe XD,<br>Photoshop, Google Play Console
+                        <br><br><span class="normal">Partner:</span>
+                            <br><a href="https://sammyyoo.com/" class="gray">Seongchang 'Sammy' Yoo</a> 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+</body>
+
+</html>
