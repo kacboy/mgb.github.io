@@ -11,10 +11,15 @@
             <video autoplay loop muted src="vid/kacboy.webm"></video>
         </a>
     </div>
-    
+    <div class="videoCard">
+        <a href="videos/thepeak.html">
+            <img src="img/thumbs/thepeak.jpg">
+            <video autoplay loop muted src="vid/thepeak.webm"></video>
+        </a>
+    </div>
 </div>
 <div class="project-row">
-    <div class="videoCard">
+    <!-- <div class="videoCard">
         <a href="videos/pushsquare.html">
             <img src="img/thumbs/pushsquare.jpg">
             <video autoplay loop muted src="vid/pushsquare.webm"></video>
@@ -31,5 +36,57 @@
             <img src="img/thumbs/metaoptima.jpg">
             <video autoplay loop muted src="vid/metaoptima.webm"></video>
         </a>
+    </div> -->
+    <div class="thumbnail">
+        <a href="designs/alana.html">
+            <img src="img/thumbs/alana.png">
+            <!-- <video autoplay loop muted src="vid/pushsquare.webm"></video> -->
+        </a>
     </div>
+    <div class="thumbnail">
+        <a href="designs/wideshot.html">
+            <img src="img/thumbs/wideshot.png">
+            <!-- <video autoplay loop muted src="vid/pushsquare.webm"></video> -->
+        </a>
+    </div>
+    <div class="thumbnail">
+        <a href="designs/emurgency.html">
+            <img src="img/thumbs/emurgency.png">
+            <!-- <video autoplay loop muted src="vid/pushsquare.webm"></video> -->
+        </a>
+    </div>    
+    <div class="thumbnail">
+        <a href="designs/flymigos.html">
+            <img src="img/thumbs/flymigos.png">
+            <!-- <video autoplay loop muted src="vid/pushsquare.webm"></video> -->
+        </a>
+    </div>    
+    <div class="thumbnail">
+        <a href="designs/rlmatchtracker.html">
+            <img src="img/thumbs/rlmatchtracker.png">
+            <!-- <video autoplay loop muted src="vid/pushsquare.webm"></video> -->
+        </a>
+    </div>    
+
+    <!-- Randomize order -->
+    <script>
+        $(document).ready(function () {
+            var cards = $(".thumbnail"); // Select all cards
+    
+            // Randomize the order of the cards
+            cards.sort(function () {
+                return Math.random() - 0.5;
+            }).appendTo(cards.parent()); // Reorder cards in the DOM
+    
+            // Show only the first 4 cards and hide the rest
+            cards.each(function (index) {
+                if (index < 4) {
+                    $(this).show(); // Show the first 4 cards
+                } else {
+                    $(this).hide(); // Hide the remaining cards
+                }
+            });
+        });
+    </script>
+        
 </div>

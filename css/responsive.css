@@ -180,6 +180,10 @@
     .project-row .videoCard:not(:last-child) {
         margin-right: unset;
     }
+    .project-row .thumbnail:not(:last-child) {
+        max-width: 100%;
+        padding-right: unset;
+    }
 }
 
 
