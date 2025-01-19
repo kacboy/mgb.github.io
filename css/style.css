@@ -679,6 +679,7 @@ figure {
   z-index: 1;
 }
 
+
 .video-thumb:before {
   content: "";
   top: 0;
@@ -733,6 +734,10 @@ figure {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 0;
+}
+
+.designCard:hover {
+  filter: invert(calc(.75 / 2)) brightness(calc(1 + .75));
 }
 
 /* IMAGES */
