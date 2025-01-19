@@ -736,10 +736,6 @@ figure {
   left: 0;
 }
 
-.designCard:hover {
-  filter: invert(calc(.75 / 2)) brightness(calc(1 + .75));
-}
-
 /* IMAGES */
 img {
   width: 100%;
@@ -815,4 +811,8 @@ img {
 
 .project-row .videoCard:not(:last-child) {
   margin-right: .5rem;
+}
+
+.designCard:hover {
+  filter: invert(calc(.75 / 2)) brightness(calc(1 + .75));
 }
