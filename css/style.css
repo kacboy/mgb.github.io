@@ -742,7 +742,7 @@ img {
   -moz-border-radius: 0.25rem;
   border-radius: 0.25rem;
 }
-.thumbnail {
+.thumbnail, .designCard {
   max-width:calc(calc(100% - 1.5rem) / 4);
   padding-right: .5rem;
   padding-bottom: .5rem;
@@ -750,13 +750,13 @@ img {
   display: inline-block;
   margin: 0;
 }
-.thumbnail img {
+.thumbnail img, .designCard img {
   transform: none;
   top: unset;
   vertical-align: middle;
   position: unset;
 }
-.thumbnail:nth-of-type(4n) {
+.thumbnail:nth-of-type(4n), .designCard:nth-of-type(4n) {
   padding-right: 0rem;
   float: right;
 }
