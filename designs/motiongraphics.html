@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <style>@media (prefers-color-scheme: light){ body{visibility: hidden; opacity:0; background-color: white;}} @media (prefers-color-scheme: dark){ body{visibility: hidden; opacity:0; background-color: black;}}
+    </style>
+
+<head>
+    <title>Marcus Blackstock / Motion Graphics</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="header"></div>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#footer").load("/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <div class="body-wrapper">
+        <div class="project-wrapper">
+            <div class="project-content">
+                <h2 class="black" id="headingDesign">Motion Graphics</h2>
+                <h3>Animated Visual Designs</h3>
+            </div>
+            <div class="project-row">
+                <div class="project-content noMargin">
+                    <div class="carousel"
+                        data-flickity='{"imagesLoaded": true, "percentPosition": false, "wrapAround": true, "autoPlay": false}'>
+                        <div class="carousel-cell"><video src="../vid/flymigos.webm" autoplay muted loop></div>
+                        <div class="carousel-cell"><video src="../vid/motiongraphics/bear.webm" autoplay muted loop></div>
+                        <div class="carousel-cell"><video src="../vid/motiongraphics/million.webm" autoplay muted loop></div>
+                        <div class="carousel-cell"><video src="../vid/motiongraphics/viper.webm" autoplay muted loop></div>
+                        <div class="carousel-cell"><video src="../vid/motiongraphics/pushsquare.webm" autoplay muted loop></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-row">
+                <div class="project-content">
+                    <p>In addition to many years of professional video editing, I've created many animations and motion graphics 
+                        
+                        over the years as a byproduct of both my visual
+                        design
+                        background and working as a professional video editor for many years. Here are a few of my
+                        favourites in a
+                        randomized order.</p>
+                </div>
+                <div class="project-content rightAlign">
+                    <p class="gray">
+                        <!-- <a href="https://github.com/kacboy/RL-MatchTracker">GitHub</a><br> -->
+                        <!-- Sep 2019 - May 2020<br><br>-->
+                        <span class="normal">Tools:</span>
+                        <br>After Effects, Premiere Pro,<br>Illustrator, Photoshop
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>
