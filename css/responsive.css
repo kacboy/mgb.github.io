@@ -65,7 +65,7 @@
         max-width: 100%;
     }
 
-    .imgThumb p {
+    .imgThumb p, .videoThumb p {
         opacity: 0;
     }
 
