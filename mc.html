@@ -1,73 +1,86 @@
 <!doctype html>
 <html lang="en">
-    <style>@media (prefers-color-scheme: light){ body{visibility: hidden; opacity:0; background-color: white;}} @media (prefers-color-scheme: dark){ body{visibility: hidden; opacity:0; background-color: black;}}
-    </style>
-    
-    <head>
-        <title>Marcus Blackstock / Minecraft</title>
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <div id="header"></div>
-        <script>
+<style>
+    @media (prefers-color-scheme: light) {
+        body {
+            visibility: hidden;
+            opacity: 0;
+            background-color: white;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            visibility: hidden;
+            opacity: 0;
+            background-color: black;
+        }
+    }
+</style>
+
+<head>
+    <title>Marcus Blackstock / Minecraft</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="header"></div>
+    <script>
         $(function () {
             $("#header").load("/header.html");
             $("#footer").load("/footer.html");
         });
     </script>
-    </head>
+</head>
 
-    <body>
-        <nav>
-            <div class="nav-content">
-                <h1 class="title"><a href="/mc.html"><span>Marcus Blackstock</span></a></h1>
-                <div class="nav-links">
-                    <a href="https://discord.gg/5mztRFs" class="nav-item">Discord</a>
-                    <a href="/map.html" target="_self" class="nav-item">Map</a>
-                    <a href="#" class="btn-toggle nav-item mdi mdi-brightness-6"
-                        title="Toggle dark/light mode"></a>
-                </div>
+<body>
+    <nav>
+        <div class="nav-content">
+            <h1 class="title"><a href="/mc.html"><span>Marcus Blackstock</span></a></h1>
+            <div class="nav-links">
+                <a href="https://discord.gg/5mztRFs" class="nav-item">Discord</a>
+                <a href="/map.html" target="_self" class="nav-item">Map</a>
+                <a href="#" class="btn-toggle nav-item mdi mdi-brightness-6" title="Toggle dark/light mode"></a>
             </div>
-        </nav>
-
-        <div class="project-wrapper">
-            <div class="project-row">
-                <div class="project-content noMargin">
-                    <h1 style="color: #77cc77;" class="mdi mdi-minecraft"><span
-                            class="black"> Marcus' Minecraft Server</span></h1><br>
-                    <code>mc.marcusblackstock.com</code><br><br><br>
-                    <div id="rest">Loading...<br><br>If you see poop, the server
-                        is up!</div>
-                </div>
-                <div class="project-content">
-                    <img src="img/minecraft/unknown_server.png" id="favicon">
-                </div>
-            </div>
-            <br>
-            <hr><br>
-            <div class="project-row noMargin">
-                <div class="project-content noMargin">
-                    <h3 class="mdi mdi-map" style="color: #77cc77;"> Map</h3>
-                </div>
-                <div class="project-content noMargin">
-                    <p class="rightAlign" style="padding: 0 0 0.5rem 0;"><a 
-                            target="_self"
-                            href="/map.html" 
-                            style=" vertical-align:bottom;"
-                            class="mdi mdi-fullscreen">Fullscreen</a></p>
-                </div>
-            </div>
-            <div class="project-row">
-                <div class="map">
-                    <iframe src="https://mc.marcusblackstock.com/">
-                        <p>Your browser does not support iframes.</p>
-                    </iframe>
-                </div>
-            </div>
-            <!-- <p class="rightAlign gray date" style="padding-top: 0.5rem;"></p> -->
         </div>
-        <script
-            src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-        <script src="/js/mc.js"></script>
-        <div id="footer"></div>
-    </body>
+    </nav>
+
+    <div class="project-wrapper">
+        <div class="project-row">
+            <div class="project-content">
+                <h1 style="color: #77cc77" class="mdi mdi-minecraft"><span class="black"> Marcus' Minecraft Server</span>
+                </h1>
+            </div>
+        </div>
+        <div class="project-row server">
+            <div class="project-content noMargin">
+                <code style="font-size: 1.25rem">mc.marcusblackstock.com</code><br><br><br>
+                <div id="rest">Loading...<br><br>If you see poop, the server
+                    is up!</div>
+            </div>
+            <div class="project-content server-icon">
+                <img src="/img/minecraft/unknown_server.png" id="server-icon-img">
+            </div>
+        </div>
+        <br>
+        <hr><br>
+        <div class="project-row noMargin">
+            <div class="project-content noMargin">
+                <h3 class="mdi mdi-map" style="color: #77cc77;"> Map</h3>
+            </div>
+            <div class="project-content noMargin">
+                <p class="rightAlign" style="padding: 0 0 0.5rem 0;"><a target="_self" href="/map.html"
+                        style=" vertical-align:bottom;" class="mdi mdi-fullscreen">Fullscreen</a></p>
+            </div>
+        </div>
+        <div class="project-row">
+            <div class="map">
+                <iframe src="https://mc.marcusblackstock.com/">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+            </div>
+        </div>
+        <!-- <p class="rightAlign gray date" style="padding-top: 0.5rem;"></p> -->
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="/js/mc.js"></script>
+</body>
 
 </html>
