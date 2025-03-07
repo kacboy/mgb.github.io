@@ -246,7 +246,6 @@
 
 @media (prefers-color-scheme: dark) {
     body {
-        --color-green: #77cc77;
         --color-white: black;
         --color-black: #FAFAFA;
         --color-grey: gray;
