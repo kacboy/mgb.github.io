@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <style>@media (prefers-color-scheme: light){ body{visibility: hidden; opacity:0; background-color: white;}} @media (prefers-color-scheme: dark){ body{visibility: hidden; opacity:0; background-color: black;}}
+    </style>
+
+<head>
+    <title>Marcus Blackstock / Tech</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="header"></div>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#footer").load("/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <div class="body-wrapper">
+        <div class="body-content" style="width: 100%;">
+            <h3 class="mdi mdi-console"> Technical Projects</h3>
+            
+            <div class="headingText">
+                <h2><a href="tech/homelab.html">Homelab</a></h2>
+            </div>
+            <div class="imgThumb">
+                <img src="img/cards/homelab.png">
+                <p class="gray">Homelab Server</p>
+            </div>
+            <br>
+
+            <div class="headingText">
+                <h2><a href="designs/rlmatchtracker.html">RL Match Tracker</a></h2>
+            </div>
+            <div class="imgThumb">
+                <img src="img/cards/rlmatchtracker.png">
+                <p class="gray">Android App</p>
+            </div>
+            <br>
+
+            <div class="headingText">
+                <h2><a href="designs/emurgency.html">EMUrgency</a></h2>
+            </div>
+            <div class="imgThumb">
+                <img src="img/cards/emurgency.png">
+                <p class="gray">Android Game</p>
+            </div>
+            <br>
+
+            <div class="headingText">
+                <h2><a href="tech/portfolio.html">Portfolio</a></h2>
+            </div>
+            <div class="imgThumb">
+                <img src="img/cards/wideshot.png">
+                <p class="gray">Web Design</p>
+            </div>
+            <br>
+
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>
