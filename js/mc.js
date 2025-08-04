@@ -19,7 +19,7 @@ $.getJSON(url, function (r) {
             '</li>';
     }
   } else {
-    pl = '<li style="list-style: none;">No players online</li>';
+    pl = '<li>No players online</li>';
   }
 
   // Handle MOTD
