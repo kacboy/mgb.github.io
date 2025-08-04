@@ -402,7 +402,7 @@ h2 a:hover {
 
 .player-avatar{
     max-width: 2rem;
-    transform: translateY(.5rem)
+    transform: translateY(.375rem)
 }
 
 /* VIDEOS EMBED */
