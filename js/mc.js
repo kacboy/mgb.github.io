@@ -14,7 +14,7 @@ $.getJSON(url, function (r) {
       var uuid = player.uuid;
       var name = player.name;
       pl += '<li style="list-style: none; transform: translateX(-1rem);">' +
-              '<img class="player-avatar" src="https://crafatar.com/renders/head/' + uuid + '?size=32&overlay"> ' +
+              '<img class="player-avatar" src="https://crafatar.com/avatars/' + uuid + '?size=32&overlay"> ' +
               name +
             '</li>';
     }
