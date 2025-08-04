@@ -327,10 +327,6 @@ hr {
     margin-bottom: 1rem;
 }
 
-ul {
-    list-style-type: square;
-}
-
 .rightAlign {
     text-align: right;
 }
@@ -402,6 +398,11 @@ h2 a:hover {
 
 .map {
     border-radius: .25rem;
+}
+
+.player-avatar{
+    max-width: 2rem;
+    transform: translateY(.5rem)
 }
 
 /* VIDEOS EMBED */

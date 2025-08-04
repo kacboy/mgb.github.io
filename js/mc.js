@@ -8,12 +8,18 @@ $.getJSON(url, function (r) {
 
   // Handle player list (may not exist or may be empty)
   var pl = '';
-  if (r.players && r.players.online > 0 && r.players.sample) {
-    for (var i = 0; i < r.players.sample.length; i++) {
-      pl += '<li>' + r.players.sample[i].name + '</li>';
+  if (r.players && r.players.online > 0 && r.players.list && r.players.list.length > 0) {
+    for (var i = 0; i < r.players.list.length; i++) {
+      var player = r.players.list[i];
+      var uuid = player.uuid;
+      var name = player.name;
+      pl += '<li style="list-style: none; transform: translateX(-1rem);">' +
+              '<img class="player-avatar" src="https://crafatar.com/renders/head/' + uuid + '?size=32&overlay"> ' +
+              name +
+            '</li>';
     }
   } else {
-    pl = '<li>No players online</li>';
+    pl = '<li style="list-style: none;">No players online</li>';
   }
 
   // Handle MOTD
