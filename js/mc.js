@@ -45,7 +45,7 @@ $.getJSON(url, function (r) {
   $('#rest').html(
     '<b>SERVER ONLINE!</b><br>Message me to be whitelisted.<br>' +
     'Open to Java and Bedrock players.<br>Use port <b>' + port + '</b> for Bedrock Edition.<br><br>' +
-    '<p>Discord: <a href="https://discord.gg/5mztRFs">https://discord.gg/5mztRFs</a></p><br>' +
+    '<p>Discord: <a href="https://discord.gg/dKXSMqTZgk">https://discord.gg/dKXSMqTZgk</a></p><br>' +
     '<b>MOTD:</b> ' + motd + '<br>' +
     '<b>Version:</b> ' + version + '<br><br>' +
     '<b>Players Online:</b> ' + r.players.online + '/' + r.players.max + '<br>' +
