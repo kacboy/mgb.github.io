@@ -331,6 +331,15 @@ hr {
     text-align: right;
 }
 
+.twothird {
+    width: calc(60%) !important;
+    margin-right: calc(5%) !important; 
+}
+
+.third{
+    width: calc(35%) !important;
+}
+
 .social {
     margin-top: 1rem;
     transform: translateX(-.2rem);

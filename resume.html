@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+    <style>
+        @media (prefers-color-scheme: light){ body{visibility: hidden; opacity:0; background-color: white;}} 
+        @media (prefers-color-scheme: dark){ body{visibility: hidden; opacity:0; background-color: black;}}
+        body { margin: 0; }
+        .container { display: flex; flex-wrap: wrap; }
+        .left-column { flex: 2 1 0; padding: 1rem; min-width: 0; }
+        .right-column { flex: 1 1 0; padding: 1rem; min-width: 0; }
+        @media (max-width: 800px) {
+            .container { flex-direction: column; }
+        }
+    </style>
+
+    <head>
+        <title>Marcus Blackstock</title>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <div id="header"></div>
+        <script>
+        $(function () {
+            $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#project-grid").load("/project-grid.html");
+            $("#footer").load("/footer.html");
+        });
+    </script>
+    </head>
+
+    <body>
+        <div id="nav-placeholder"></div>
+
+        <div class="body-wrapper">
+            <div class="project-wrapper">
+                <div class="project-row">
+                    <div class="project-content twothird noMarginTop">
+                        <h3>Work Experience</h3>
+                        <p style="font-weight: bold;">Junior IT Technician - BGC Engineering Inc.</p>
+                        <p class="gray">Jun 2025 - Present</p>
+                        <p>Provide Tier 1/2 IT support for local and remote staff, troubleshooting hardware, software, and network issues. Co-manage the corporate mobile fleet, process IT purchasing orders, and maintain hardware inventory and technical documentation.</p>
+                        <br><p style="font-weight: bold;">Video Editor & Camera Operator - Linus Media Group</p>
+                        <p class="gray">Apr 2021 - Feb 2024 (Fulltime), Sep 2024 - Dec 2025 (Contract)</p>
+                        <p>Collaborated with a production team to produce viral technology-focused video content across several platforms and channels. Personally edited over 350 videos that have accumulated approximately 500 million views on YouTube.</p>
+                        <br><p style="font-weight: bold;">Freelance Video Editor & Producer</p>
+                        <p class="gray">Feb 2024 - May 2025</p>
+                        <p>Utilized my expertise in video editing, motion graphics, color grading, sound design, and video game cinematography to provide clients with high-quality, timely assistance with various video projects. </p>
+                        <br><p style="font-weight: bold;">Video Animator / Editor - MetaOptima Technology Inc.</p>
+                        <p class="gray">Sep 2020 - Apr 2021</p>
+                        <p>Created health-technology video content for software training, hardware demonstration, and marketing. Executed filming, editing, animating, and organizing files for each project as necessary.</p>
+                        <br><p style="font-weight: bold;">Multimedia Editor - The Peak SFU</p>
+                        <p class="gray">Jan 2019 - Aug 2020</p>
+                        <p>Managed the production/creation of digital video content for the online presence of SFU’s student newspaper. Projects include weekly video features, social media content, and podcast episodes.</p>
+                        <br><p style="font-weight: bold;">UX / Graphic Designer Co-op - Plasmatic Technologies Inc.</p>
+                        <p class="gray">Jan 2018 - Aug 2018</p>
+                        <p>Designed the interface of a consumer-facing smart home app dashboard and implemented workflows for the software development team. Produced additional graphics, print materials, and presentations needed by the executive team.</p>
+                    <br><br><h3>Personal Development</h3>
+                        <p style="font-weight: bold;">YouTube Partner & Content Creator - @kacboy</p>
+                        <p class="gray">Jun 2024 - Present</p>
+                        <p>Write, film, and edit Playstation and video game content on my own branded YouTube Partner channel with over 1M views and 2.6K subs.</p>
+                        <br><p style="font-weight: bold;">Video Producer - Push Square</p>
+                        <p class="gray">Oct 2018 - Oct 2019</p>
+                        <p>Independently created videos for Push Square, a PlayStation-focused news outlet. Published timely video features, guides, and conducted in-person interviews/previews with developers at PAX West 2019.</p>
+                        <br><p style="font-weight: bold;">Director of Web & Social Media -IATSU</p>
+                        <p class="gray">May 2017 - Apr 2018</p>
+                        <p>Responsible for the management of student union social media channels and website. Generated relevant content, announcements, and web pages for campus activities.</p><br><br>
+                    </div>
+                    <div class="project-content third noMarginTop">
+                        <h3>Education</h3>
+                        <p style="font-weight: bold;">British Columbia Institute of Technology</p>
+                        <p class="gray">Fall 2024 - Spring 2025</p>
+                        <p>Network Administrator Technician <br>Associate Certificate</p>
+                        <br><p style="font-weight: bold;">Simon Fraser University</p>
+                        <p class="gray">Fall 2015 - Spring 2021</p>
+                        <p>BA in Interactive Arts and Technology <br>Minor in Print and Digital Publishing</p>
+                        <br><br><h3>Certifications</h3>
+                        <p>CompTIA Network+</p>
+                        <p class="gray">Issued May 2025</p>
+                        <p>Credential ID - 5JTFE2XS9NR4C28J</p>
+                        <br><p>CompTIA A+</p>
+                        <p class="gray">Issued Jan 2025</p>
+                        <p>Credential ID - KPNHYPE56FRQQTWT</p>
+                        <br><p>TestOut PC Pro</p>
+                        <p class="gray">Issued Dec 2024</p>
+                        <p>Credential ID - 6-1C6-VL7FLW</p>
+                    
+                        <!-- <br><br><h3>Proficiencies</h3>
+                        <p style="font-weight: bold;">Post-Production</p>
+                        <p>DaVinci Resolve, Premiere Pro, After Effects, Audition, Colour Correction</p>
+                        <br><p style="font-weight: bold;">Visual Design</p>
+                        <p>Affinity, Photoshop, Illustrator, InDesign, Lightroom, Figma, Typography</p>
+                        <br><p style="font-weight: bold;">Media Production</p>
+                        <p>DSLR Cameras, Lighting & Composition, XLR Interfaces, Teleprompters, Capture Cards</p>
+                        <br><p style="font-weight: bold;">Hardware</p>
+                        <p>PC Building, Troubleshooting, Gaming Consoles, Networking, Retro Systems</p>
+                        <br><p style="font-weight: bold;">Software</p>
+                        <p>Google Workspace, Office 365, Trello, Parsec, Windows, Mac, Linux, Unraid, Emulators</p>
+                        <br><p style="font-weight: bold;">IT & Systems Administration</p>
+                        <p>Active Directory, Microsoft 365 Admin, Mobile Device Management, IT Asset Tracking & Procurement</p>
+                        <br><p style="font-weight: bold;">Hardware & Systems</p>
+                        <p>Workstation Deployment, PC Building, Troubleshooting, Network Infrastructure, Mobile Fleet Logistics, Gaming Consoles, Retro Systems</p>
+                        <br><p style="font-weight: bold;">Software & OS</p>
+                        <p>Windows (Desktop/Server), macOS, Linux, Unraid, Google Workspace, Trello, Parsec, Emulators</p>
+                        <br><p style="font-weight: bold;"></p>Hardware</p>
+                        <p>PC Building, Troubleshooting, Workstations, Mobile Devices & Fleet Management, Networking, Gaming Consoles, Retro Systems</p>
+                        <br><p style="font-weight: bold;">Software</p>
+                        <p>Windows, macOS, Linux, Unraid, Active Directory, Microsoft 365 Admin, MDM, Google Workspace, Office 365, Trello, Parsec, Emulators</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </body>
+</html>
