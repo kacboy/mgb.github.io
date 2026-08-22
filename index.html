@@ -1,53 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <style>@media (prefers-color-scheme: light){ body{visibility: hidden; opacity:0; background-color: white;}} @media (prefers-color-scheme: dark){ body{visibility: hidden; opacity:0; background-color: black;}}
-    </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcus Blackstock</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E1R2WD1B8P"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <head>
-        <title>Marcus Blackstock</title>
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <div id="header"></div>
-        <script>
-        $(function () {
-            $("#header").load("/header.html");
-            $("#nav-placeholder").load("/nav.html");
-            $("#project-grid").load("/project-grid.html");
-            $("#footer").load("/footer.html");
-        });
-    </script>
-    </head>
+  gtag('config', 'G-E1R2WD1B8P');
+  </script>
+  <link href="/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    <body>
-        <div id="nav-placeholder"></div>
+    body {
+      background-color: #77cc77;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column; /* Stacks image and social links vertically */
+      justify-content: center;
+      align-items: center;
+      gap: 16px; /* Spacing between image and social links */
+      position: relative;
+      overflow: hidden;
+    }
 
-        <div class="body-wrapper">
-            <div class="body-content">
-                <h1 class="black">Hello! My name is Marcus, and I'm a
-                    multimedia creator from Vancouver, Canada with experience in video production, digital marketing, and visual design.
-                </h1>
-                <h3>Feel free to take a look at some of my work:</h3>
-                <!-- <div class="headingText">
-                    <h2><a href="video.html">Video Production</a></h2>
-                </div>
-                <div class="indexThumb">
-                    <video src="vid/thumbs/metaoptima.webm" autoplay loop></video>
-                </div>
-                <br>
-                <div class="headingText">
-                    <h2><a href="design.html">Design Projects</a></h2>
-                </div>
-                <div class="indexThumb">
-                    <video src="vid/thumbs/alana.webm" autoplay loop></video>
-                </div>
-                <br>
-                <div class="headingText">
-                    <h2><a href="motion.html">Motion Graphics</a></h2>
-                </div>
-                <div class="indexThumb">
-                    <video src="vid/motion/viper.webm" autoplay loop></video>
-                </div> -->
-                <div id="project-grid"></div>
-        </div>
-        <div id="footer"></div>
-    </body>
+    /* Vignette layer */
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0) 30%,
+        rgba(0, 0, 0, 0.35) 100%
+      );
+      pointer-events: none;
+    }
+
+    .wiggle-image {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      cursor: pointer;
+      user-select: none;
+      position: relative;
+      z-index: 1;
+      border-radius: 50%;
+      display: block;
+
+      /* Natural ease-out settlement when mouse leaves */
+      animation: settle 0.4s ease-out forwards;
+    }
+
+    .wiggle-image:hover {
+      /* Fast active wiggle while hovering */
+      animation: wiggle 0.35s linear infinite;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px; /* Adds space between the image and social links */
+      z-index: 1; /* Ensures content sits above the vignette layer */
+    }
+
+    /* Fast, infinite loop on hover */
+    @keyframes wiggle {
+      0%   { transform: rotate(0deg); }
+      25%  { transform: rotate(-9deg); }
+      50%  { transform: rotate(0deg); }
+      75%  { transform: rotate(9deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    /* Eased decay sequence when hover stops */
+    @keyframes settle {
+      0%   { transform: rotate(0deg); }
+      20%  { transform: rotate(-6deg); }
+      40%  { transform: rotate(4deg); }
+      60%  { transform: rotate(-2deg); }
+      80%  { transform: rotate(1deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    .social {
+      
+    }
+
+    .social a {
+      font-size: 24px;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 5%, var(--color-white) 5%, var(--color-white) 87.5%, rgba(255, 255, 255, 0) 87.5%); */
+    }
+
+    .social a:hover {
+      color: black;
+      text-shadow: unset;
+          /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 5%, var(--color-green) 5%, var(--color-green) 87.5%, rgba(255, 255, 255, 0) 87.5%); */
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="img/face.png" class="wiggle-image" width="200" height="200">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/mgblackstock/" class="mdi mdi-linkedin mdi-24px" title="Linkedin"></a>
+      <a href="https://www.youtube.com/@MarcusBlackstock" class="mdi mdi-youtube mdi-24px" title="YouTube"></a>
+      <a href="https://www.youtube.com/@kacboy" class="mdi mdi-emoticon-poop mdi-24px" title="@kacboy"></a>
+      <a href="mailto:me@marcusblackstock.com" class="mdi mdi-email mdi-24px" title="Email"></a>
+    </div>
+  </div>
+</body>
 </html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <style>@media (prefers-color-scheme: light){ body{visibility: hidden; opacity:0; background-color: white;}} @media (prefers-color-scheme: dark){ body{visibility: hidden; opacity:0; background-color: black;}}
+    </style>
+
+    <head>
+        <title>Marcus Blackstock</title>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <div id="header"></div>
+        <script>
+        $(function () {
+            $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#project-grid").load("/project-grid.html");
+            $("#footer").load("/footer.html");
+        });
+    </script>
+    </head>
+
+    <body>
+        <div id="nav-placeholder"></div>
+
+        <div class="body-wrapper">
+            <div class="body-content">
+                <h1 class="black">Hello! My name is Marcus, and I'm a
+                    multimedia creator from Vancouver, Canada with experience in video production, digital marketing, and visual design.
+                </h1>
+                <h3>Feel free to take a look at some of my work:</h3>
+                <!-- <div class="headingText">
+                    <h2><a href="video.html">Video Production</a></h2>
+                </div>
+                <div class="indexThumb">
+                    <video src="vid/thumbs/metaoptima.webm" autoplay loop></video>
+                </div>
+                <br>
+                <div class="headingText">
+                    <h2><a href="design.html">Design Projects</a></h2>
+                </div>
+                <div class="indexThumb">
+                    <video src="vid/thumbs/alana.webm" autoplay loop></video>
+                </div>
+                <br>
+                <div class="headingText">
+                    <h2><a href="motion.html">Motion Graphics</a></h2>
+                </div>
+                <div class="indexThumb">
+                    <video src="vid/motion/viper.webm" autoplay loop></video>
+                </div> -->
+                <div id="project-grid"></div>
+        </div>
+        <div id="footer"></div>
+    </body>
+</html>
