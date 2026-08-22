@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
   <title>Marcus Blackstock</title>
+  
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E1R2WD1B8P"></script>
   <script>
@@ -24,7 +26,8 @@
     }
 
     body {
-      background-color: #77cc77;
+      background-color: #77cc77 !important;
+      color-scheme: light !important;
       min-height: 100vh;
       display: flex;
       flex-direction: column; /* Stacks image and social links vertically */
@@ -110,6 +113,11 @@
       color: black;
       text-shadow: unset;
           /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 5%, var(--color-green) 5%, var(--color-green) 87.5%, rgba(255, 255, 255, 0) 87.5%); */
+    }
+
+    :root {
+      /* Tells Chrome & native engine NOT to invert colors on this page */
+      color-scheme: only light;
     }
   </style>
 </head>
